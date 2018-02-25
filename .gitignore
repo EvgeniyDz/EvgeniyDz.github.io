@@ -1,0 +1,4 @@
+.gulp-scss-cache
+node_modules
+jquery-spincrement-master
+*.psd

@@ -51,7 +51,7 @@
     }
     p{
         font-size: 20px;
-        line-height: 69px;
+        line-height: 40px;
         color: rgb(36,51,62);
         padding-left: 60px;
         margin-right: 5%;
@@ -62,7 +62,7 @@
         position: absolute;
         width: 45px;
         height: 33px;
-        top: 19px;
+        top: 5px;
         left: 0px;
         background: url(../img/email.png);
     }
@@ -71,21 +71,24 @@
         position: absolute;
         width: 45px;
         height: 33px;
-        top: 19px;
+        top: 5px;
         left: 0px;
         background: url(../img/phone.png);
     }
 }
 .wrapper{
-    display: flex; 
-    margin-top: 100px;   
+    width: 335px;
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 50px;   
 }
 .profile__ico{
     width: 30%;
     background: url(../img/my-profile.png);    
     position: relative;
+    min-height: 825px;
     p{
-        @include icop;
+        @include icop;        
     }
     .profile__ico--name{
         position: absolute;
@@ -153,7 +156,7 @@
         background: #1a5076;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: center;        
         .profile__ico--name{        
             position: relative;
             left: 30px;
@@ -170,6 +173,8 @@
     }
     .wrapper{
         margin-top: 0;
+        flex-wrap: nowrap;
+        
     }
     .profile__portfolio{
         margin-top: 0;
