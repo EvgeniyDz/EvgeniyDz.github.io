@@ -1,0 +1,240 @@
+.skills{
+    @include blocks;
+    background: #edede7;
+    height: 825px;
+}
+.skills__ico{
+    width: 30%;
+    margin-top: -1px;
+    background: url(../img/my-skills.png);    
+    position: relative;
+    p{
+        @include icop;
+    }
+    .skills__ico--name{
+        position: absolute;
+        left: 100px;
+        bottom: 10px;
+    }    
+}
+.skills__content{
+    width: 67%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+        .name{
+            @include contenth3; 
+            margin-bottom: 0;  
+            font-weight: 800;         
+        }
+        .per{
+            font-size: 30px;            
+            color: rgb(36,51,62);
+            font-family: "Open Sans";
+            margin-top: 0;
+        }
+        .content--right{
+            text-align: right;
+        }
+}
+.html{
+    position: relative;
+}
+.html::after{
+    content: "";
+    position: absolute;
+    width: 311px;
+    height: 30px;
+    top: 105px;
+    left: 0px;
+    background: #335f7a;
+    animation: bar80 2s;
+}
+.css{
+    position: relative;
+}
+.css::after{
+    content: "";
+    position: absolute;
+    width: 311px;
+    height: 30px;
+    top: 105px;
+    left: 0px;
+    background: #9cb3ab;
+    animation: bar80 2s;
+}
+.js{
+    position: relative;
+}
+.js::after{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    top: 105px;
+    left: 0px;
+    background: #bfb28f;
+    animation: bar60 2s;
+}
+.jq{
+    position: relative;
+}
+.jq::after{
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 30px;
+    top: 105px;
+    left: 0px;
+    background: #335f7a;
+    animation: bar70 2s;
+}
+.react{
+    position: relative;
+}
+.react::after{
+    content: "";
+    position: absolute;
+    width: 230px;
+    height: 30px;
+    top: 105px;
+    left: 0px;
+    background: #9cb3ab;
+    animation: bar50 2s;
+}
+.scss{
+    position: relative;
+}
+.scss::after{
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 30px;
+    top: 105px;
+    right: 0;
+    background: #bfb28f;
+    animation: bar70 2s;
+}
+.ph{
+    position: relative;
+}
+.ph::after{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    top: 105px;
+    right: 0;;
+    background: #335f7a;
+    animation: bar60 2s;
+}
+.gulp{
+    position: relative;
+}
+.gulp::after{
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 30px;
+    top: 105px;
+    right: 0;
+    background: #9cb3ab;
+    animation: bar70 2s;
+}
+.git{
+    position: relative;
+}
+.git::after{
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 30px;
+    top: 105px;
+    right: 0;
+    background: #bfb28f;
+    animation: bar70 2s;
+}
+.en{
+    position: relative;
+}
+.en::after{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    top: 105px;
+    right: 0;
+    background: #335f7a;
+    animation: bar60 2s;
+}
+
+.per{
+    position: relative;
+}
+.per::after{
+    position: absolute;
+    content: "%";
+    top: 0;
+    left: 35px;
+}
+.content--right{
+    .per{
+        padding-right: 35px;
+    }
+    .per::after{
+        left: 95%;
+    }
+}
+
+@keyframes bar80{
+    0%{
+        width: 0;
+    }    
+    100%{
+        width: 311px;
+    }
+}
+@keyframes bar70{
+    0%{
+        width: 0;
+    }    
+    100%{
+        width: 280px;
+    }
+}
+@keyframes bar60{
+    0%{
+        width: 0;
+    }    
+    100%{
+        width: 250px;
+    }
+}
+@keyframes bar50{
+    0%{
+        width: 0;
+    }    
+    100%{
+        width: 230px;
+    }
+}
+
+
+@media (max-width: 1220px){   
+    .skills__ico{
+        background: #bfb18f;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .skills__ico--name{        
+            position: relative;
+            left: 30px;
+        }
+    }
+    .content--right{        
+        .per::after{
+            left: 90%;
+        }
+    } 
+}

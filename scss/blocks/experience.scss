@@ -1,0 +1,60 @@
+.experience{
+    @include blocks;
+    background: #dce5ea;
+}
+.experience__ico{
+    width: 30%;
+    margin-top: -1px;
+    background: url(../img/experience.png);    
+    position: relative;
+    p{
+        @include icop;
+    }
+    .experience__ico--name{
+        position: absolute;
+        left: 100px;
+        bottom: 10px;
+    }    
+}
+.experience__content{
+    width: 67%;
+    margin-left: 3%;
+    display: none;
+        h3{
+            @include contenth3;
+        }
+        p{
+            @include contentp;
+        }    
+}
+.experience__content__first{
+    display: flex;
+    justify-content: flex-start;
+}
+.experience__content__second{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.content--left{
+    margin-right: 20%;
+    width: 40%;
+}
+.content--right{
+    padding-right: 40px;
+    margin-right: 0;
+    width: 60%;
+}
+
+@media (max-width: 1220px){
+    .experience__ico{
+        background: #4e7fa2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .experience__ico--name{        
+            position: relative;
+            left: 30px;
+        }
+    }  
+}
