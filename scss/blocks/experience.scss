@@ -23,6 +23,8 @@
     display: none;
         h3{
             @include contenth3;
+            margin-bottom: 0;
+            line-height: 50px;
         }
         p{
             @include contentp;

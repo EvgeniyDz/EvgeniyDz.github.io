@@ -70,12 +70,12 @@
 .js::after{
     content: "";
     position: absolute;
-    width: 250px;
+    width: 230px;
     height: 30px;
     top: 105px;
     left: 0px;
     background: #bfb28f;
-    animation: bar60 2s;
+    animation: bar50 2s;
 }
 .jq{
     position: relative;
@@ -135,12 +135,12 @@
 .gulp::after{
     content: "";
     position: absolute;
-    width: 280px;
+    width: 250px;
     height: 30px;
     top: 105px;
     right: 0;
     background: #9cb3ab;
-    animation: bar70 2s;
+    animation: bar60 2s;
 }
 .git{
     position: relative;
@@ -148,12 +148,12 @@
 .git::after{
     content: "";
     position: absolute;
-    width: 280px;
+    width: 230px;
     height: 30px;
     top: 105px;
     right: 0;
     background: #bfb28f;
-    animation: bar70 2s;
+    animation: bar50 2s;
 }
 .en{
     position: relative;

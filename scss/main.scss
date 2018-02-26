@@ -24,14 +24,14 @@ body{
           font-size: 35px;
             line-height: 69px;
             color: rgb(36,51,62);
-            font-family: "Open Sans";            
+            font-family: "Open Sans", sans-serif;            
 }
 @mixin contentp{
             width: 100%;
             font-size: 25px;
             line-height: 50px;
             color: rgb(26,48,63);
-            font-family: "Open Sans";
+            font-family: "Open Sans", sans-serif;
 }
 
 .no-display{

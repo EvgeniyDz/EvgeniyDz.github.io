@@ -35,14 +35,15 @@
 }
 .profile__content__info{
     h1{
-        font-size: 60px;
+        font-size: 55px;
         color: rgb(36,51,62);
-        font-family: "Open Sans";
+        font-family: "Open Sans", sans-serif;
         margin: 0;
         margin-bottom: 40px;
         margin-top: 120px;
     }
     h2{
+        width: 410px;
         font-size: 40px;
         color: rgb(36,51,62);
         text-transform: uppercase;
@@ -80,7 +81,7 @@
     width: 335px;
     display: flex;
     flex-wrap: wrap; 
-    margin-top: 50px;   
+    margin-top: 45px;   
 }
 .profile__ico{
     width: 30%;
