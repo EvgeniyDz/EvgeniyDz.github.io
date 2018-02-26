@@ -1,0 +1,143 @@
+.promo{
+  background: #fafafa;  
+  h1{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    z-index: 11;
+    position: relative;
+    font-size: 25pt;
+  }
+}
+.promo--images{
+  z-index: 1;
+  margin-top: -190px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 330px;
+
+}
+.promo_img{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.promo__items{
+  width: 100%;
+  height: 206px;
+  margin: 0 auto;
+  margin-top: -90px;
+  position: relative;
+  z-index: 11;
+}
+.promo__item--1{
+  background: #63d1bb;
+  height: 103px;
+  width: 100%;
+    p{
+      text-align: left;
+      font-size: 17pt;
+      color: #fff;
+      margin-left: 8%;
+      padding-top: 25px;
+    }
+}
+.promo__item--1::after{
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 75%;
+  width: 40px;
+  height: 62px;
+  background: url(../img/sprite/interior.png);
+}
+.promo__item--2{
+  background: #56c3b2;
+  height: 103px;
+  width: 100%;
+  margin-top: -30px;
+    p{
+      text-align: left;
+      font-size: 17pt;
+      color: #fff;
+      margin-left: 8%;
+      padding-top: 25px;
+    }
+}
+.promo__item--2::after{
+  content: "";
+  position: absolute;
+  top: 58%;
+  left: 73%;
+  width: 60px;
+  height: 60px;
+  background: url(../img/sprite/toy-svg.png);
+}
+@media (min-width: 768px){
+.promo{
+  height: 560px;
+    h1{
+    font-size: 30pt;
+  }
+}
+  .promo__items{
+    display: flex;
+    position: relative;
+    width: 770px;
+    margin: 0 auto;
+    margin-top: -95px;
+  }
+  .promo__items::after{
+    content: "";
+    position: absolute;
+    background: url(../img/sprite/zigzag.png);
+    background-repeat-y: no-repeat;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    height: 60px;
+  }
+  .promo--br{
+    display: none;
+  }
+  .promo--images{
+    width: 700px;
+    height: 600px;
+  }
+  .promo__item--1{
+    width: 50%;
+    margin-top: 0;
+    p{
+      padding-top: 0;
+    }
+  }
+  .promo__item--2{
+    width: 50%;
+    margin-top: 0;
+    p{
+      padding-top: 0;
+    }
+  }
+  .promo__item--1::after{
+    left: 40%;
+  }
+  .promo__item--2::after{
+    left: 88%;
+    top: 10%;
+  }
+}
+@media (min-width: 1050px){
+  .promo{
+      h1{
+      font-size: 35pt;
+    }
+  }
+  .promo__items{
+    width: 1050px;
+  }
+  .promo--images{
+    margin-top: -200px;
+  }
+}

@@ -1,0 +1,156 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 40px;
+  h2{
+    margin: 0 auto;
+    text-align: left;
+    font-size: 22pt;
+    width: 297px;
+  }
+}
+
+.content__promo{
+  text-align: center;
+  margin-right: 170px;
+  color: #63d1bb;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+.content__discription{
+  width: 300px;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 5px;
+  font-size: 12pt;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+.content__table{
+  margin: 0 auto;
+  width: 308px;
+  display: table;
+  tr{
+    height: 40px;
+    border-bottom: 5px solid rgba(0,0,0,0.1);
+  }
+}
+.content_price{
+  font-weight: bold;
+}
+.content__btn{
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 33px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+  width: 260px;
+  border: 1px solid #444444;
+}
+.content__btn:hover{
+  background: #444444;
+  color: #fff;
+}
+
+@media (min-width: 768px){
+  .content{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 770px;
+    position: relative;
+      h2{
+        order: 1;
+        margin-left: 0;
+        margin-bottom: 70px;
+      }
+      picture{
+        width: 333px;
+        height: 404px;
+        order: 4;
+      }
+  }
+  
+  .content__promo{
+    order: 2;
+    margin-left: 200px;
+    margin-right: 20px;
+    margin-bottom: 70px;
+    text-align: center;
+    width: 70px;
+  }
+  .content__discription{
+    width: 330px;
+    margin-left: 0;
+    margin-top: -310px;
+    order: 3;
+  }
+  .content__table{
+    margin-top: -450px;
+    margin-left: 0;
+    order: 5;
+  }
+  .content_price{
+    margin-right: 450px;
+    margin-top: -150px;
+    order: 6;
+  }
+  .content__btn{
+    order: 7;
+    margin-top: -50px;
+    margin-right: 450px;
+  }
+}
+@media (min-width: 1050px){
+  .content{
+    width: 1050px;
+    position: relative;
+      h2{
+        order: 2;
+        font-size: 35pt;
+        z-index: 11;
+        padding-top: 50px;
+        margin-left: 60px;
+      }
+      picture{
+        margin-left: 520px;
+        margin-top: -270px;
+        width: 525px;
+        height: 636px;
+      }
+  }
+  .content__promo{
+    order: 1;
+    margin-left: 50px;
+    padding-top: 50px;
+  }
+  .content__discription{
+    margin-right: 350px;
+    margin-top: 0px;
+    width: 300px;
+  }
+  .content__table{
+    margin-top: -550px;
+    margin-left: 200px;
+  }
+  .content_price{
+    margin-right: 418px;
+    margin-left: 25px;
+  }
+  .content__btn{
+    margin-right: 400px;
+  }
+}

@@ -1,0 +1,177 @@
+.filter{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    min-height: 55px;
+    background: #fff;
+    border-bottom: 0.1px solid #95a5a7;
+}
+.filter-list{
+    margin-left: 3%;
+}
+.f-option{
+    background: none;
+    border: none;
+    font-family: "Gotham Medium";
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: rgb(150,166,167);
+    cursor: pointer;
+    outline: none;
+}
+.f-option:hover{
+    color: #e94e38;
+}
+.checked{
+    color: #e94e38;
+    cursor: default;
+}
+.filter-city{
+    width: 115px;
+    height: 35px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;      
+    border-radius: 17px;
+    background-color: rgba(86,99,117,0);
+    border: 1px solid #95a5a7;
+    outline: none; 
+    cursor: pointer;   
+    font-size: 12px;
+    line-height: 30px;
+    color: rgb(150,166,167);
+    font-family: "Gotham Medium";
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+.filter-city:hover{
+    color: #e94e38;
+}
+.map{
+    width: 125px;
+    height: 35px;
+    padding-right: 25px;    
+    position: relative;
+    border-radius: 17px;
+    background-color: rgba(86,99,117,0);
+    border: 1px solid #95a5a7;
+    font-size: 12px;
+    line-height: 30px;
+    color: rgb(150,166,167);
+    font-family: "Gotham Medium";
+    text-transform: uppercase;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+}
+.map:hover{
+    color: #e94e38;
+}
+.map::after{
+    content: "";
+    width: 8px;
+    height: 12px;
+    top: 10px;
+    left: 96px;
+    position: absolute;
+    background: url(../images/map.png);
+}
+.filter-buttons{
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+        p{
+            margin-right: 10px;
+            font-size: 12px;
+            line-height: 30px;
+            color: rgb(150,166,167);
+            font-family: "Gotham Medium";
+            text-transform: uppercase;
+        }
+}
+.filter-btn{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    position: relative;
+    border-radius: 20px;
+    background-color:#b5bfc1;
+    border: none;
+    outline: none;
+    cursor: pointer;    
+}
+.btn-1:hover{
+    background-color: #1baf5d;
+}
+.btn-1-active{
+    background-color: #1baf5d;
+}
+.btn-2:hover{
+    background-color: #354a90;
+}
+.btn-3:hover{
+    background-color: #a0798e;
+}
+.btn-4:hover{
+    background-color: #f19d1f;
+}
+.btn-4-active{
+    background-color: #f19d1f;
+}
+.btn-5:hover{
+    background-color: #87499b;
+}
+.btn-5-active{
+    background-color: #87499b;
+}
+.btn-1::after{
+    content: "";
+    width: 24px;
+    height: 19px;
+    top: 10px;
+    left: 8px;
+    position: absolute;
+    background: url(../images/home.png);
+}
+.btn-2::after{
+    content: "";
+    width: 16px;
+    height: 19px;
+    top: 10px;
+    left: 12px;
+    position: absolute;
+    background: url(../images/man.png); 
+}
+.btn-3::after{
+    content: "";
+    width: 29px;
+    height: 19px;
+    top: 10px;
+    left: 6px;
+    position: absolute;
+    background: url(../images/head.png); 
+}
+.btn-4::after{
+    content: "";
+    width: 19px;
+    height: 19px;
+    top: 10px;
+    left: 9px;
+    position: absolute;
+    background: url(../images/mus.png); 
+}
+.btn-5::after{
+    content: "";
+    width: 18px;
+    height: 19px;
+    top: 10px;
+    left: 11px;
+    position: absolute;
+    background: url(../images/bus.png); 
+}
+@media (max-width: 768px){
+    .filter{
+        flex-direction: column;
+    }
+}

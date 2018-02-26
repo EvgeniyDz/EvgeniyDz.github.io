@@ -1,0 +1,182 @@
+.main-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background: url(../images/footer.jpg);
+    background-position-y: 416px;
+    background-repeat-x: no-repeat;    
+}
+.subscribe{    
+    position: relative;
+    width: 1100px;
+    border-bottom: 0.1px solid #95a5a7; 
+    h3{
+        margin-top: 40px;
+        font-size: 24px;
+        line-height: 30px;
+        color: rgb(255,255,255);        
+        text-align: center;
+        // box-shadow: 0.5px 0.866px 1px rgba(0,0,1,0.15);
+    }
+    .sub-input{
+        position: relative; 
+        margin: 0 auto;
+        margin-left: 290px;      
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 450px;
+        height: 60px;
+        padding-left: 65px;
+        border-radius: 27px;
+        background-color: rgba(255,255,255,0.10196078431372549);
+        border: 1px solid rgba(255,255,255,0.2);
+        outline: none;
+        cursor: text;
+        font-size: 18px;
+        line-height: 30px;
+        color: rgb(255,255,255);
+        font-family: "Gbook";
+        z-index: 2;
+    }        
+    .sub-btn{
+        position: relative;
+        width: 135px;
+        height: 50px;
+        margin-top: 30px;
+        margin-left: -145px;
+        padding-top: 3px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 1px 1.732px 0px #c1402e;
+        background-color: #e94d37;
+        font-size: 18px;
+        line-height: 48px;
+        color: rgb(255,255,255);
+        font-family: "Gotham Medium";
+        text-align: center;
+        text-transform: uppercase;
+        outline: none;
+        cursor: pointer;
+        z-index: 45;
+    } 
+    .sub-btn:hover{        
+        box-shadow: 0px 0px 20px #000;     
+    }
+}
+.subscribe::before{
+        content: "";
+        width: 18px;
+        height: 15px;
+        top: 144px;
+        left: 315px;
+        position: absolute;
+        background: url(../images/latter.png);
+}
+.contact{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+        ul{
+            list-style: none;            
+            font-size: 16px;
+            line-height: 24px;
+            color: rgb(255,255,255);
+            font-family: "Gotham Medium";
+                li{                    
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: rgb(192,190,188);
+                    font-family: "GBook";
+                }
+        }
+        ul:nth-child(2){
+            margin-left: -340px;
+        }
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    margin-right: 40px;
+        h4{
+            font-size: 16px;
+            line-height: 24px;
+            color: rgb(255,255,255);
+        }
+        p{
+            margin-top: 45px;
+            font-size: 14px;
+            line-height: 24px;
+            color: rgb(255,255,255);
+            font-family: "GBook";
+        }
+}
+.soc-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        .fb{
+            font-size: 0px;
+            width: 15px;
+            height: 29px;
+            background: url(../images/fb.png);
+        }
+        .fb:hover{
+            background: url(../images/fb-active.png);
+        }
+        .twit{
+            font-size: 0px;
+            width: 29px;
+            height: 22px;
+            background: url(../images/tw.png);
+        }
+        .twit:hover{
+            background: url(../images/tw-active.png);
+        }
+        .google{
+            font-size: 0px;
+            width: 27px;
+            height: 29px;
+            background: url(../images/g.png);
+        }
+        .google:hover{
+            background: url(../images/g-active.png);
+        }
+        .tube{
+            font-size: 0px;
+            width: 26px;
+            height: 29px;
+            background: url(../images/yt.png);
+        }
+        .tube:hover{
+            background: url(../images/yt-active.png);
+        }
+}
+
+
+@media (min-width: 1280px){
+    .main-footer{
+        background-size: 100%;
+    }
+}
+@media (max-width: 1070px){
+    .subscribe{
+        width: 980px;
+            .sub-input{
+                margin-left: 235px;
+            }
+    }
+    .subscribe::before{
+        left: 260px;
+    }
+    .contact{
+        width:980px;
+    }
+}
+.sub-input::-webkit-input-placeholder {color:#fff;}
+.sub-input::-moz-placeholder  {color:#fff;}
+.sub-input:-moz-placeholder {color:#fff;}
+.sub-input:-ms-input-placeholder  {color:#fff;}
