@@ -3,8 +3,7 @@ $(document).ready(function(){
 });
 
 $(window).scroll(function(){  
-  var st = $("html").scrollTop();
-  console.log(st); 
+  var st = $(window).scrollTop();  
   if ($(window).width() <= '1220'){
     if ( st > 500 ) $(".experience__content").fadeIn(1000);
     if ( st > 1200 ) $(".education__content").fadeIn(1000);
