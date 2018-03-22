@@ -10,7 +10,7 @@
             margin-right: 40px;
         }  
 }
-@media (min-width: 1640px){
+@media (min-width: 1640px){    
 .profile::after{
     content: "";
     position: absolute;
@@ -98,7 +98,7 @@
     }    
 }
 .profile__portfolio{
-    width: 780px;
+    width: 1030px;
     margin-top: 100px;
     display: flex;
     align-items: center;    
@@ -116,7 +116,7 @@
         opacity: 0.5;
     }
     .profile__portfolio--barber{
-        margin-right: 0;
+        margin-right: 35px;
     }
 }
 .profile__portfolio--mishka{
@@ -139,8 +139,16 @@
     background: url(../img/borodinski.png);
     width: 209px;
     height: 95px;
-    cursor: pointer;
-    margin-right: 0;
+    cursor: pointer;    
+}
+@media (max-width: 1640px){
+    .profile__portfolio{
+        width: 790px;
+        margin-bottom: 20px;
+    }
+    .profile__portfolio--build{
+        margin-top: 20px;
+    } 
 }
 
 @media (max-width: 1220px){
@@ -190,3 +198,40 @@
         margin-left: 0;
     }
 }
+
+.profile__portfolio--build{
+    text-decoration: none;    
+}
+.header-logo{
+    display: flex; 
+}
+.logo-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;     
+    p:nth-child(1){
+        font-size: 30px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 10px;
+        margin-top: -6px;
+        margin-bottom: 0px;
+        width: 160px;        
+    }
+    p:nth-child(2){
+        font-size: 12px;        
+        font-family: 'Ubuntu', sans-serif;
+        text-transform: uppercase;
+        margin-left: 10px;
+        margin-top: -3px;
+        text-align: justify;
+    }
+    span{
+        margin-left: 12px;
+    }
+}
+.logo{
+    width: 37px;
+    height: 36px;;
+    background: url(../build/img/logo.jpg);
+}
+
