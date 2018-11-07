@@ -1,0 +1,200 @@
+
+        /*==========>>  Buttons   <<==========*/
+            .btn{
+                display: inline-block;
+                outline: none;
+                padding: 16px 40px;
+                padding-top: 18px;
+                text-transform: uppercase;
+                color: color('white');
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 500;    
+                letter-spacing: 0.5px;
+                background-color: color('blue');
+                box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+                border-radius: 3px;
+                border: none;
+                text-align: center;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+            .btn_white{
+                color: color('blue');
+                background-color: color('white');
+                box-shadow: none;
+                font-weight: bold;
+                min-width: 250px;
+            }
+            .btn_dark_blue{
+                background-color: color('blue-txt');
+                box-shadow: none;
+            }
+            .btn_light_blue{
+                background-color: #0499ff;
+                box-shadow: none;
+            }
+            .btn_big{
+                width: 270px;
+            }
+
+        
+        /*==========>>  Typography   <<==========*/
+            
+            h1,h2,h3,h4,h5,h6{
+                margin-bottom: 20px;
+                font-weight: normal;
+                line-height: 1.23;
+            }
+            
+            h1{
+                font-size: 36px;
+            }
+            h2{
+                font-size: 20px;
+            }
+            h3{
+                font-size: 16px;
+            }
+            h4{
+                font-size: 14px;
+            }
+            h5{
+                font-size: 13px;
+            }
+            h6{
+                font-size: 11px;
+            }
+
+            .main_title{
+                text-transform: uppercase;
+                font-size: 52px;
+                line-height: 55px;
+                font-weight: bold;
+                margin-bottom: 40px;
+            }
+            .section_title{
+                display: inline-block;
+                color: colorText('default');
+                font-size: 32px;
+                line-height: 35px;
+                font-weight: bold;
+                text-transform: uppercase;
+                position: relative;
+                padding-bottom: 30px;
+                margin-bottom: 60px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    width: 115px;
+                    height: 3px;
+                    background-color: color('blue');
+                }
+
+            }
+            .section_title2{
+                &::before{
+                    left: 0;
+                    transform: translate(0, 0);
+                }
+            }
+            .form_title{
+                font-size: 50px;
+                font-weight: bold;  
+                line-height: 53px;
+                letter-spacing: 2px;
+            }
+            .catalog_title{
+                padding-bottom: 10px;
+                margin-right: 100px;
+                margin-bottom: 0;
+            }
+            .disc_title{
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 20px;
+                color: #193761;
+                margin-bottom: 15px;
+            }
+            .item_content_title{
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 20px;
+                color: colorText('default');
+                margin-bottom: 15px;
+            }
+            .contact_title{
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+            }
+
+            .title1{
+                font-size: 36px;
+                // pp
+                margin-bottom: 12px;
+            }
+            .title2{
+                font-size: 20px;
+                // pp
+                margin-bottom: 23px;
+            }
+            .title3{
+                font-size: 16px;
+            }
+            .title4{
+                font-size: 13px;
+                font-weight: 500;
+            }
+            .title5{
+                font-size: 14px;
+            }
+
+            .title6{
+                font-size: 11px;                
+            }
+
+            .white_txt{
+                color: color('white')
+            }
+
+            .regular{
+                font-weight: 400;
+            }
+            .medium{
+                font-weight: 500;
+            }
+            .bold{
+                font-weight: 700;
+            }
+
+            /*===  links  ===*/
+
+ 
+        /*==========>>  FONTS   <<==========*/
+        
+            .proxima{
+                @include font-default('Proxima Nova Reg It', false, false, false);
+            }
+
+        /*==========>>  Lists   <<==========*/
+
+            .main_list{
+                display: inline-block;
+                margin-bottom: 30px;
+                li{
+                    text-align: left;
+                    font-size: 16px;
+                    line-height: 18px;
+                    font-weight: 500;
+                    &:not(:last-child){
+                        margin-bottom: 10px;
+                    }
+                }
+
+            }
+            
+      

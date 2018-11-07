@@ -1,0 +1,191 @@
+	#content {
+        flex-grow: 1;
+        // padding: 20px 20px 20px 40px;
+    }
+        [class*="indent_box"]{
+            padding-top: 60px;
+            padding-bottom: 87px;
+        }
+        .indent_box_2{
+            padding-top: 35px;
+        }
+        .something_container{
+            @include transition(all, 1s, ease);
+
+        }
+       .page_wrap{
+        .container{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+       }
+
+
+        /* - - - - - - - - - - first screen - - - - - - - - - - */
+
+        .section1{
+            background: url(../images/main_bg.jpg) no-repeat;
+            background-size: 100% 100%;
+            padding-top: 130px;
+            padding-bottom: 100px;
+        }
+        
+        /* - - - - - - - - - -/ end of first screen - - - - - - - - - - */
+        
+        /* - - - - - - - - - - second screen - - - - - - - - - - */
+        
+        /* - - - - - - - - - -/ end of second screen - - - - - - - - - - */
+
+        .section3{
+            padding-top: 115px;
+            padding-bottom: 150px;
+            background-color: color('bg-def');
+        }
+
+        .section4{
+            padding-bottom: 90px;            
+        }
+        
+        .section5{
+            background-color: color('def-txt');
+            padding-top: 95px;
+            padding-bottom: 100px;
+            color: color('white');
+            .section_title{
+                color: color('white');
+            }
+        }
+        .abaout_content_box{
+            p:first-child{
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 18px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 1.81;
+            }
+        }
+
+        // .section6{
+        //     min-height: 660px;
+        //     background-color: green;
+        // }
+
+        .form_section{
+            background-color: color('blue');
+            padding: 50px 0;
+        }
+
+        .catalog_section{
+            padding-top: 65px;
+            padding-bottom: 75px;            
+        }
+        .catalog_title_box{
+            margin-bottom: 50px;
+        }
+        .catalog_list_box{
+            float: left;
+        }
+        .catalog_items_box{
+            overflow: hidden;
+            // margin-bottom: 80px;
+        }
+
+        /* - - - - - - - - - - Item page - - - - - - - - - - */
+        .catalog_item_disc{
+            margin-bottom: 30px;
+        }
+        .catalog_img_wrap{
+            border: solid 1px color('grey-4');
+            text-align: center;
+            padding: 40px 30px;
+        }
+        .disc_list{
+            margin-bottom: 30px;
+            li{
+                font-size: 12px;
+                line-height: 1.67;
+                color: color('def-txt');
+                padding-left: 20px;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 9px;
+                    left: 0;
+                    width: 10px;
+                    height: 1px;
+                    background-color: color('def-txt');
+                }
+            }
+        }
+        .catalog_item_content{
+            padding-top: 30px;
+            p{
+                font-size: 16px;
+                line-height: 20px;
+                color: color('def-txt');
+                margin-bottom: 20px;
+            }
+        }
+        .item_content_list{
+            margin-bottom: 20px;
+            li{
+                font-size: 16px;
+                line-height: 20px;
+                color: color('def-txt');
+                position: relative;
+                padding-left: 25px;
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 9px;
+                    left: 0;
+                    width: 15px;
+                    height: 1px;
+                    background-color: color('def-txt');
+                }
+            }
+        }
+
+        /* - - - - - - - - - -Contact page - - - - - - - - - - */
+        .contact_section1{
+            padding-top: 60px;
+            padding-bottom: 100px;
+        }
+        .contact_header{
+            display: flex;
+            align-items: center;
+        }
+        .contact_header_left{
+            color: color('def-txt');
+            max-width: 490px;
+            margin-right: 100px;
+        }
+        .contact_txt1{
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        .contact_txt2{
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        .contact_section2{
+            background-color: #f8fbff;
+            padding: 60px 0;
+        }
+
+        .contact_section3{
+            padding: 80px 0;
+        }
+
+      

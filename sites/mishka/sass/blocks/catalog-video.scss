@@ -1,0 +1,125 @@
+.catalog__video{
+  width: 260px;
+  border: 1px solid rgba(0,0,0,0.1);
+  margin-top: 30px;
+  position: relative;
+    p:nth-child(1){
+      font-weight: bold;
+      font-family: Verdana;
+      padding-left: 90px;
+      font-size: 14pt;
+      position: relative;
+    }
+    p:nth-child(3){
+      margin-left: 25px;
+      line-height: 1.5;
+    }
+    p:nth-child(1)::before{
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 25px;
+      width: 32px;
+      height: 22px;
+      background: url(../img/video.png);
+    }
+}
+.catalog__video::after{
+  content: "";
+  position: absolute;
+  top: 115px;
+  left: 75px;
+  width: 101px;
+  height: 77px;
+  background: url(../img/play.png);
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+.catalog__btn{
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 33px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+  width: 215px;
+  height: 50px;
+  border: 1px solid #444444;
+  margin-left: 24px;
+  margin-bottom: 10px;
+}
+.catalog__btn:hover{
+  background: #444444;
+  color: #fff;
+}
+@media (min-width: 768px){
+  .catalog__video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 668px;
+      img{
+        order: 1;
+        width: 668px;
+        height: 455px;
+      }
+      p:nth-child(1){
+        order: 2;
+        padding-top: 10px;
+      }
+      p:nth-child(3){
+        order: 3;
+        width: 615px;
+
+      }
+  }
+  .catalog__btn{
+    order: 4;
+    width: 615px;
+  }
+  .catalog__video::after{
+    top: 190px;
+    left: 285px;
+  }
+}
+@media (min-width: 1050px){
+  .catalog__video{
+    width: 1050px;
+    height: 455px;
+    justify-content: space-around;
+      img{
+        width: 682px;
+        height: 455px;
+        position: absolute;
+        margin-top: -30px;
+      }
+      p{
+        width: 215px;
+        margin-left: 700px;
+
+      }
+      p:nth-child(1){
+        margin-top: -45px;
+        padding-left: 37px;
+      }
+      p:nth-child(1)::before{
+        top: -25px;
+        left: 35px;
+      }
+      p:nth-child(3){
+        width: 240px;
+        margin-left: 740px;
+      }
+  }
+  .catalog__btn{
+    margin-left: 740px;
+    width: 230px;
+  }
+}

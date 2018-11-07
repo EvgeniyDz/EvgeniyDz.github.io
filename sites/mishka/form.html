@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Mishka</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <header class="page-header">
+      <a class="res" href="../index.html">Back to resume</a>
+		<nav class="main-navigation">
+        <div class="page-header__logo">
+          <a href="index.html">
+			       <picture>
+				           <source srcset="img/mishka-logo-desktop.png" media="(min-width: 1050px)" width="150px">
+				           <source srcset="img/mishka-logo-tablet.png" media="(min-width: 768px)">
+				           <source srcset="img/mishka-logo-mobile.png">
+      	           <img src="img/mishka-logo-mobile.png" width="px" height="px" alt="Logo Mishka">
+		        </picture>
+          </a>
+            <button type="button" class="page-header__btn">  </button>
+        </div>
+      <ul class="main-navigation__items">
+        <li class="main-navigation__item"><a class="main-navigation--catalog" href="catalog.html">Каталог товаров</li></a>
+        <li class="main-navigation__item"><a class="active">Вязание на заказ</a></li>
+        <li class="main-navigation__item"><a class="main-navigation--search" href="">Поиск по сайту</a></li>
+        <li class="main-navigation__item"><a class="main-navigation--cart" href="">Корзина: пока пуста</a></li>
+				<li class="main-navigation__item"><a class="main-navigation--sell" href="">Новые поступления</a></li>
+        <li class="main-navigation__item"><a href="">Распродажа</a></li>
+        <li class="main-navigation__item">Бесплатная доставка по России</li>
+      </ul>
+		</nav>
+    <div class="page-header__logo--bot">
+      <a href="index.html">
+      <img src="img/mishka-logo-mobile.png" width="86px" height="35px" alt="Logo Mishka">
+      </a>
+      <button type="button" class="page-header__btn--open">  </button>
+    </div>
+  </header>
+  <main class="form">
+    <h1>Вязание на заказ</h1>
+    <form class="form__area" method="post">
+      <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <div class="form__type">
+        <p class="form__head">Тип</p>
+        <label class="form__radio">
+          <input class="form__rad" type="radio" name="type">
+          <span class="form-indicator"></span>
+          Аксессуар для интерьера
+        </label>
+        <label class="form__radio">
+          <input class="form__rad" type="radio" name="type">
+          <span class="form-indicator"></span>
+          Детская игрушка
+        </label>
+      </div>
+      <div class="form__color">
+        <p class="form__head">Цвет</p>
+        <label class="form__check">
+          <input class="form__checkbox" type="checkbox" name="color">
+          <span class="check-indicator"></span>
+          Белый
+        </label>
+        <label class="form__check">
+          <input class="form__checkbox" type="checkbox" name="color">
+          <span class="check-indicator"></span>
+          Серый
+        </label>
+        <label class="form__check">
+          <input class="form__checkbox" type="checkbox" name="color">
+          <span class="check-indicator"></span>
+          "Тиффани"
+        </label>
+        <label class="form__check">
+          <input class="form__checkbox" type="checkbox" name="color">
+          <span class="check-indicator"></span>
+          Черный
+        </label>
+        <label class="form__check">
+          <input class="form__checkbox" type="checkbox" name="color">
+          <span class="check-indicator"></span>
+          Розовый
+        </label>
+        <label class="form__check">
+          <input class="form__checkbox" type="checkbox" name="color">
+          <span class="check-indicator"></span>
+          Оранжевый
+        </label>
+      </div>
+      <div class="form__fio">
+        <p class="form__head">ФИО</p>
+        <label class="form__name">
+          Имя:
+          <input class="form__text" type="text" name="fio" placeholder="Укажите имя">
+        </label>
+        <label class="form__name">
+          Фамилия:
+          <input class="form__text" type="text" name="fio" placeholder="Введите фамилию">
+        </label>
+        <label class="form__name">
+          Отчество:
+          <input class="form__text" type="text" name="fio" placeholder="Отчество, если желаете">
+        </label>
+      </div>
+      <div class="form__numb">
+        <p class="form__head">ТЕЛ</p>
+        <input class="form__tel" type="tel" name="phone" placeholder="+3 80x xx xx xxx">
+      </div>
+      <div class="form__e-mail">
+        <p class="form__head">E-mail</p>
+        <input class="form__mail" type="email" name="mail" placeholder="Ваша почта">
+      </div>
+      <div class="form__sub">
+        <p class="form__head">Доп</p>
+        <input class="form__dop" type="text" name="dop" placeholder="Опишите все ваши пожелания">
+      </div>
+      <button type="submit" class="form__btn">Отправить заказ</button>
+    	<p class="form--ob">Все поля являются обязательными</p>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer--container">
+      <a href="index.html" class="page-footer__link page-footer__logo"></a>
+      <div class="page-footer__social">
+        <a class="page-footer__social--btn-inst" href="">Инста</a>
+        <a class="page-footer__social--btn-fb" href="">Фб</a>
+        <a class="page-footer__social--btn-tvit" href="">Твит</a>
+      </div>
+      <div class="page-footer__dev">
+        <p>Разработано</p>
+        <a class="page-footer__dev--html" href="">HtmlAcademy</a>
+      </div>
+  </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+figure, figcaption {
+	display: block;
+}
+
+.transition {
+    -webkit-transition: top 400ms linear;
+    -moz-transition: top 400ms linear;
+    -ms-transition: top 400ms linear;
+    -o-transition: top 400ms linear;
+    transition: top 400ms linear;
+}
+
+.timeTo {
+	font-family: Tahoma, Verdana, Aial, sans-serif;
+	font-size: 28px;
+	line-height: 108%;
+	font-weight: bold;
+	height: 32px;
+}
+
+.timeTo span {
+	vertical-align: top;
+}
+
+.timeTo.timeTo-white div {
+	color: black;
+    background: #ffffff; /* Old browsers */
+}
+.timeTo.timeTo-black div {
+	color: white;
+    background: #45484d; /* Old browsers */
+}
+
+.timeTo.timeTo-black .timeTo-alert {
+    background: #a74444; /* Old browsers */
+}
+
+.timeTo.timeTo-white .timeTo-alert {
+    background: #ffffff; /* Old browsers */
+}
+
+.timeTo figure {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.timeTo figcaption {
+	text-align: center;
+	/*font-size: 12px;*/
+	line-height: 80%;
+	font-weight: normal;
+	color: #888;
+}
+
+.timeTo div {
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	height: 30px;
+	border-top: 1px solid silver;
+	border-right: 1px solid silver;
+	border-bottom: 1px solid silver;
+	overflow: hidden;
+}
+.timeTo div.first {
+	border-left: 1px solid silver;
+}
+
+.timeTo ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 3px;
+}
+
+.timeTo ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

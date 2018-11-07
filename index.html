@@ -1,148 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">    
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Resume</title>
-    <link rel="shortcut icon" href="/img/faviconka_ru_1817.ico" type="image/x-icon">    
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Evgeniy Dzhulay - One Page Personal Portfolio</title>
+
+	<!-- CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="assets/css/animate.css" rel="stylesheet">
+    
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+    
+    <script src="assets/js/modernizr.custom.js"></script>
+       
 </head>
-<body>    
-    <main class="main-container">
-        <section class="profile">
-            <div class="profile__ico">
-                <div class="profile__ico--name">
-                    <p>My</p>
-                    <p>Profile</p>
+<body>
+
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+	<!-- Home start -->
+
+	<section id="home" class="pfblock-image screen-height">
+        <div class="home-overlay"></div>
+		<div class="intro">
+			<div class="start">Hello, my name is Evgeniy Dzhulay and I am</div>
+			<h1>Front End Developer</h1>
+			<div class="start">creating modern Web Sites</div>
+		</div>
+
+        <a href="#services">
+		<div class="scroll-down">
+            <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
+		</div>
+        </a>
+
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Evgeniy Dzhulay</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Works</a></li>
+                        <li><a href="#skills">Skills</a></li>
+						<li><a href="#testimonials">Testimonials</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+
+    <!-- Services start -->
+
+	<section id="services" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">This is what I do</h2>
+						<div class="pfblock-line"></div>
+						<!-- <div class="pfblock-subtitle">
+							No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
+						</div> -->
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-sm-3">
+
+					<div class="iconbox wow slideInLeft" data-mh="iconbox">
+						<i class="fa fa-desktop" aria-hidden="true"></i>						
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">HTML coding</h3>
+							<div class="iconbox-desc">
+								Developing new projects
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-3">
+
+					<div class="iconbox wow slideInLeft" data-mh="iconbox">
+						<i class="fa fa-laptop" aria-hidden="true"></i>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Responsive</h3>
+							<div class="iconbox-desc">
+								Making desktop web-sites mobile adaptive
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-3">
+
+					<div class="iconbox wow slideInRight" data-mh="iconbox">
+						<i class="fa fa-plus-square-o" aria-hidden="true"></i>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">New pages</h3>
+							<div class="iconbox-desc">
+								Creating new pages for the finished project
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-3">
+
+					<div class="iconbox wow slideInRight" data-mh="iconbox">
+						<i class="fa fa-wrench" aria-hidden="true"></i>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Fixed problem</h3>
+							<div class="iconbox-desc">
+								Fixing problem with HTML, CSS or JS code
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Services end -->
+    
+	<!-- Portfolio start -->
+
+	<section id="portfolio" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">My works</h2>
+						<div class="pfblock-line"></div>
+						<!-- <div class="pfblock-subtitle">
+							No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
+						</div> -->
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+            
+            
+            <div class="row">
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    
+                    <a href="https://www.matrixfitness.su/" target="_blank" class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/matrix_bg.png" alt="img01"/>
+                            <figcaption>
+                                <h2><span>Matrix</span></h2>
+                                <p>Sites with sport equipment</p>
+                            </figcaption>			
+                        </figure>
+                    </a>
+                    
                 </div>
-            </div>
-            <div class="profile__container">
-            <div class="profile__content">
-                <img src="../img/DSC_1574.JPG" alt="" class="profile__content--photo">
-                <div class="profile__content__info">
-                    <h1>Evgeniy Dzhulay</h1>
-                    <h2>junior front-end developer</h2>
-                    <div class="wrapper">
-                    <p class="mail">evgeniydzhulay@gmail.com</p>
-                    <p class="phone">+380962780586</p>
-                    </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <a href="https://marketplace.arcona.io/ru" target="_blank"  class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/arcona_bg.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2>Arcona <span>Marketplace</span></h2>
+                                <p>The Arcona Marketplace is own trading platform.</p>
+                            </figcaption>			
+                        </figure>
+                    </a>
+                    
                 </div>
-            </div>
-            <div class="profile__portfolio">
-                <p>Portfolio:</p>
-                <a class="profile__portfolio--mishka" href="./mishka/index.html">Mishka</a>
-                <a class="profile__portfolio--duhoot" href="./duhoot/index.html">Duhoot</a>
-                <a class="profile__portfolio--barber" href="./barbershop2017-master/index.html">Barbershop</a>
-                <a class="profile__portfolio--build" href="./build/index.html">
-                    <div class="header-logo">
-                        <div class="logo"></div>
-                        <div class="logo-text">
-                            <p>Build Home</p>
-                            <p>I n d u s t r i a l <span></span> T h e m e</p>
-                        </div>
-                    </div>            
-                </a>
-            </div>
-            </div>      
-        </section>
-        <section class="experience">
-            <div class="experience__ico">
-                <div class="experience__ico--name">
-                    <p>Work</p>
-                    <p>Experience</p>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <a href="./sites/business_course/nav.html" target="_blank" class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/bc_bg.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2>Business <span>Course</span></h2>
+                                <p>Business Course in the internet</p>
+                            </figcaption>			
+                        </figure>
+                    </a>
+                    
                 </div>
-            </div>
-               <div class="experience__content">
-                <div class="experience__content__first">
-                    <div class="content--left">
-                       <h3>System Administrator</h3>
-                       <p>September 14 - Present</p>
-                    </div>
-                    <div class="content--right">
-                        <h3>School №10</h3>
-                       <p>Repair and maintenance of PCs and computer networks</p>
-                 </div>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <a href="./sites/mishka/index.html" target="_blank" class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/mishka_bg.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2><span>Mishka</span></h2>
+                                <p>My first responsive project</p>
+                            </figcaption>			
+                        </figure>
+                    </a>
+                    
                 </div>
-                <div class="experience__content__second">
-                        <div class="content--left">
-                           <h3>Junior Front-end Developer</h3>
-                           <p>October 17 - Present</p>
-                        </div>
-                        <div class="content--right">
-                            <h3>Company</h3>
-                           <p>I have no experience working in commercial projects but links to my works are above</p>
-                     </div>
-                    </div>
-            </div>
-        </section>
-        <section class="education">
-            <div class="education__ico">
-                <div class="education__ico--name">
-                    <p>My</p>
-                    <p>Education</p>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <a href="http://leto.yunarmy.ru/" target="_blank"  class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/young_bg.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2><span>Yunarmy</span></h2>
+                                <p>Summer camps site</p>
+                            </figcaption>			
+                        </figure>
+                    </a>
+                    
                 </div>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <a href="./sites/avia/index.html" target="_blank" class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/avia_bg.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2><span>Aviadrom</span></h2>
+                                <p>Aircraft website</p>
+                            </figcaption>			
+                        </figure>
+                    </a>
+                    
+				</div>
+				
+				<div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <a href="./sites/obi/index.html" target="_blank" class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/obi_bg.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2><span>OBI Club</span></h2>
+                                <p>Supermarket chain</p>
+                            </figcaption>			
+                        </figure>
+                    </a>
+                    
+				</div>
+				
+				<div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <a href="./sites/barbershop/index.html" target="_blank" class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/barber_bg.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2><span>Barbershop</span></h2>
+                                <p>My first project</p>
+                            </figcaption>			
+                        </figure>
+                    </a>
+                    
+				</div>
+				
+				<div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <a href="./sites/akbe/index.html" target="_blank" class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/akbe_bg.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2><span>Akbe</span></h2>
+                                <p>Online store</p>
+                            </figcaption>			
+                        </figure>
+                    </a>
+                    
+                </div>
+                
             </div>
-                <div class="education__content">
-                    <div class="education__content__first">
-                            <div class="content--left">
-                                    <h3>Junior Specialist Degree</h3>
-                                    <p>September 10 - June 14</p>
-                                 </div>
-                                 <div class="content--right">
-                                     <h3>College at V.O.Sukhomlynskyi Mykolaiv National University</h3>
-                                    <p>In 2014 completed the full course and obtained professional qualification "Computer technician"</p>
-                              </div>
-                    </div>
-                    <div class="education__content__second">
-                            <div class="content--left">
-                               <h3>Specialist Degree</h3>
-                               <p>September 14 - June 17</p>
+
+
+		</div><!-- .contaier -->
+
+	</section>
+
+	<!-- Portfolio end -->
+    
+    <!-- Skills start -->
+    
+    <section class="pfblock pfblock-gray" id="skills">
+		
+			<div class="container">
+			
+				<div class="row skills">
+					
+					<div class="row">
+
+                        <div class="col-sm-6 col-sm-offset-3">
+
+                            <div class="pfblock-header wow fadeInUp">
+                                <h2 class="pfblock-title">My Skills</h2>
+                                <div class="pfblock-line"></div>
+                                <!-- <div class="pfblock-subtitle">
+                                    No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
+                                </div> -->
                             </div>
-                            <div class="content--right">
-                                <h3>V.O.Sukhomlynskyi Mykolaiv National University</h3>
-                               <p>In 2017 completed the full course and obtained professional qualification "Specialist of Computer System and Networks"</p>
-                         </div>
+
                         </div>
-                </div>
-        </section>
-        <section class="skills">
-            <div class="skills__ico">
-                <div class="skills__ico--name">
-                    <p>My</p>
-                    <p>Skills</p>
-                </div>
-            </div>
-            <div class="skills__content">
-                <div class="content--left">                                
-                    <p class="html name">HTML</p>
-                        <p class="html-per per">80</p>
-                    <p class="css name">CSS</p>
-                        <p class="css-per per">80</p>
-                    <p class="js name">JavaScript</p>
-                        <p class="js-per per">50</p>
-                    <p class="jq name">jQuery</p>
-                        <p class="jq-per per">70</p>
-                    <p class="react name">React</p>
-                        <p class="react-per per">50</p>
-                </div>
-                <div class="content--right">
-                    <p class="scss name">SCSS</p>
-                        <p class="scss-per per">70</p>
-                    <p class="ph name">Photoshop</p>
-                        <p class="ph-per per">60</p>
-                    <p class="gulp name">Gulp</p>
-                        <p class="gulp-per per">60</p>
-                    <p class="git name">Git</p>
-                        <p class="git-per per">50</p>
-                    <p class="en name">English</p>
-                        <p class="en-per per">60</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="jquery.spincrement.min.js"></script>
-    <script src="script.js"></script>
+
+                    </div><!-- .row -->
+					
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="90" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">90</span>
+                        </span>
+						<h3 class="text-center">HTML / CSS</h3>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="70" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">70</span>
+                        </span>
+						<h3 class="text-center">JavaScript</h3>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="85" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">85</span>
+                        </span>
+						<h3 class="text-center">JQuery</h3>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="70" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">70</span>
+                        </span>
+						<h3 class="text-center">Gulp / Git</h3>
+					</div>
+					
+				</div><!--End row -->
+			
+			</div>
+		
+    </section>
+    
+    <!-- Skills end -->
+
+	<!-- Contact start -->
+
+	<section id="contact" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header contact-header">
+						<h2 class="pfblock-title">Contact</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle contact-subtitle">
+							You can contact me:
+						</div>
+						<div class="contact_wrap">
+							<div class="row">	
+								<div class="col-md-6">					
+									<a href="tel:+380962780586" class="contact_link wow fadeInLeft">
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										+3 8(096) 278-05-86
+									</a>
+								</div>
+								<div class="col-md-6">
+									<a href="mailto:evgeniydzhulay@gmail.com" class="contact_link wow fadeInRight">
+										<i class="fa fa-envelope" aria-hidden="true"></i>
+										evgeniydzhulay@gmail.com
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="pfblock-subtitle contact-subtitle">
+							Or send me a message:
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<form id="contact-form" role="form">
+						<div class="ajax-hidden">
+							<div class="form-group wow fadeInUp">
+								<label class="sr-only" for="c_name">Name</label>
+								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+							</div>
+
+							<div class="form-group wow fadeInUp" data-wow-delay=".1s">
+								<label class="sr-only" for="c_email">Email</label>
+								<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+							</div>
+
+							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
+								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
+							</div>
+
+							<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send Message</button>
+						</div>
+						<div class="ajax-response"></div>
+					</form>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Contact end -->
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<!-- <ul class="social-links">
+						<li><a href="index.html#" class="wow fadeInUp"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".1s"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".5s"><i class="fa fa-envelope"></i></a></li>
+					</ul> -->
+
+					<p class="heart">
+                        Made with <span class="fa fa-heart fa-2x animated pulse"></span> in Ukraine
+                    </p>
+                    <p class="copyright">
+                        © 2018 Evgeniy Dzhulay
+					</p>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+	<!-- Scroll to top -->
+
+	<div class="scroll-up">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
+	</div>
+    
+    <!-- Scroll to top end-->
+
+	<!-- Javascript files -->
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+	<script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.cbpQTRotator.js"></script>
+    <script src="assets/js/jquery.matchHeight-min.js"></script>
+	<script src="assets/js/custom.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,55 @@
+/*  <!-- 1. IMPORT Plugins and other CSS files 
+============================================ --> */
+// @import "../css/font.css";
+// @import "lib/_fonts";
+
+/*  <!-- 2. DEFAULT Stylesheets 
+============================================ --> */
+    html,body{
+        width:100%;
+        height: 100%;
+    }
+
+
+    body {
+        @include font-default('Rubik', 13px, false, 1.2);
+        color: colorText('default'); 
+        color: color('bg-def');       
+        letter-spacing: 0.2px;
+        min-width:320px;
+    }
+
+    /* when you select text is added to a custom style  */
+   
+//     ::selection{
+//         color: color('white');
+//         background-color: color('green');
+//     }
+
+//    ::-moz-selection{
+//         color: color('white');
+//         background-color: color('green');
+//     }
+
+    /* !!! */
+
+    /* custom style to scroll (only in chrome) */
+    
+//     ::-webkit-scrollbar{
+//         background: color('pinkish-grey');
+//         width: 10px;
+//     }
+
+//    ::-webkit-scrollbar-thumb{background: color('slate-grey');}
+   
+   /* !!! */
+
+
+.detect_scroll_width{
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+

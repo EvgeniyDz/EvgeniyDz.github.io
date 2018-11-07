@@ -1,0 +1,67 @@
+$color-black:            #000;
+$color-white:            #fff;
+$color-light-blue:       #689dd9;
+$color-dark-blue:        #0058bd;
+$color-blue:             #2773cc;
+$color-grey:             #666666;
+$color-grey-2:           #939393;
+$color-grey-3:           #4a4a4a;
+$color-grey-4:           #b4b5ba;
+
+$color-def-txt:          #2b333b;
+$color-bg-def:           #fafdff;
+$color-blue-txt:         #104480;
+
+
+$colors: (
+  'black' :            $color-black,
+  'white' :            $color-white,
+  'light-blue':        $color-light-blue,
+  'dark-blue':         $color-dark-blue,
+  'blue':              $color-blue,
+  'grey':              $color-grey,
+  'grey-2':            $color-grey-2,
+  'grey-3':            $color-grey-3,
+  'grey-4':            $color-grey-4,
+
+  'def-txt':           $color-def-txt,
+  'bg-def':            $color-bg-def,
+  'blue-txt':          $color-blue-txt,
+);
+
+$colors-text: (
+  'default':     $color-def-txt,
+  'white':       $color-white,
+);
+
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    $key: map-get($colors, $key);
+    @return color($key);
+  }
+
+  @return $key;
+}
+
+@function colorText($key) {
+  @if map-has-key($colors-text, $key) {
+    $key: map-get($colors-text, $key);
+    @return colorText($key);
+  }
+
+  @return $key;
+}
+
+
+// EXAMPLE START
+
+// div { background-color: color('white');} 
+// ====== OR (ИЛИ) ======
+// div { background-color: map-get($colors, 'yellow');} 
+
+// ==>>
+
+// div { background-color: #ffdc00; }
+
+// EXAMPLE END

@@ -1,0 +1,391 @@
+/*  <!-- RESPONSIVE
+============================================ --> */
+// здесь мы пишем медиа запросы 
+
+// width start 
+$w1200: 1200px;
+$w992: 992px;
+$w768: 768px;
+$w576: 576px;
+$w480: 480px;
+// width end 
+
+
+// =============================================================================
+    
+
+/* <!-- minw start
+	============================================ --> */
+
+
+	@media only screen and (min-width:$w480){
+		.text{
+			display: block;
+		}
+	}/* <!-- min-width: #{$w480} --> */
+
+	
+	@media only screen and (min-width:$w576){
+		.text{
+			display: block;
+		}
+	}/* <!-- min-width: #{$w576} --> */
+
+
+	@media only screen and (min-width:$w768){
+		.text{
+			display: block;
+		}
+	}/* <!-- min-width: #{$w768} --> */
+
+
+	@media only screen and (min-width:$w992){
+		.text{
+			display: block;
+		}
+	}/* <!-- min-width: #{$w992} --> */
+	
+	
+	@media only screen and (min-width:$w1200){
+		.text{
+			display: block;
+		}
+
+	}/* <!-- min-width: #{$w1200} --> */
+
+
+/* <!-- minw end 
+	============================================ --> */
+
+
+
+
+/* <!-- maxw start
+	============================================ --> */
+
+
+	@media only screen and (max-width:$w1200 - 1px){
+		.text{
+			display: block;
+		}
+
+		.main_container{
+			width: 970px;
+		}
+		.main_img_box {
+			margin-right: 0;
+		}
+	}/* <!-- max-width: #{$w1200 - 1px} --> */
+
+
+	@media only screen and (max-width:$w992 - 1px) {
+		.map_wrap{
+			padding: 30px;
+		}
+		.text{
+			display: block;
+		}
+		.main_title {
+		    font-size: 45px;
+		    line-height: 45px;
+		}
+
+		.main_container{
+			width: 750px;
+		}
+		.main_box{
+			align-items: flex-end;
+		}
+
+		.check_label a{
+			display: inline;
+		}
+		.form_row{
+			display: block;
+		}
+		.calendar_box{
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+
+		.navigation_menu{
+			display: none;
+		}
+		.login_btn{
+			display: none;
+		}
+		.heder_right_box{
+			img{
+				display: none;
+			}
+		}
+		.btn_nav{
+			display: block;
+		}
+		.map_list {
+
+			span strong {
+				font-weight: normal;
+			}
+			.cost_val{
+				display: none;
+			}
+			.map_list_head {
+				display: flex;
+
+				& *{
+					color: #999999 !important;
+					font-size: 14px;
+				}
+				&::before {
+					display: none;
+				}
+			}
+		}
+
+		.calc_box_top{
+			display: block;
+		}
+		.calc_form{
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		.calc_new_disc{
+			width: 100%;
+		}
+		
+	}/* <!-- max-width: #{$w992 - 1px} --> */
+
+
+	@media only screen and (max-width:$w768 - 0px) {
+		.text{
+			display: block;
+		}
+		.main_container{
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+		.main_box{
+			display: block;
+			padding-left: 30px;
+			padding-right: 30px;
+			margin-right: -15px;
+			margin-left: -15px;
+			border-radius: 0;
+			// border: none;
+		}
+		// .section_1{
+		// 	border-bottom: 1px solid #e5e5e5;
+		// 	border-top: 1px solid #e5e5e5;
+		// }
+		.main_title_box{
+			max-width: 100%;
+			text-align: center;
+			padding-top: 10px;
+			span{
+				justify-content: center;
+			}
+		}
+		.main_img_box{
+			text-align: center;
+		}
+
+		.features_box{
+			display: block;
+		}
+		.features_item{
+			width: 100%;
+			padding: 30px 30px 30px 30px;
+		}
+		.features_item1{
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+		.features_img_box{
+			display: none;
+		}
+
+		.calc_box{
+			margin-right: -15px;
+			margin-left: -15px;
+			border-radius: 0;
+		}
+		.calc_box_top{
+			display: block;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.calc_form{
+			width: 100%;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		.range_val{
+			display: block;
+			text-align: center;
+			padding: 10px 10px;
+			border: 1px solid #e5e5e5;
+			border-radius: 4px;
+			font-size: 16px;
+			line-height: 25px;
+			color: #ff6b00;
+			font-weight: bold;
+			margin-bottom: 15px;
+		}
+		.irs-single{
+			font-size: 0;
+			background-color: transparent;			
+			&::before{
+				opacity: 1;
+			}
+			&:after{
+				display: none;
+			}
+		}
+		.range_wrap{
+			padding-top: 0;
+		}
+
+		.calc_disc{
+			width: 100%;
+		}
+
+		.advantages_item{
+			width: 50%;
+			margin-bottom: 15px;
+			&:last-child{
+				width: 100%;
+			}
+		}
+
+		.form_box{
+			display: block;
+			padding: 30px;
+			margin-right: -15px;
+			margin-left: -15px;
+			border-radius: 0;
+			form{
+				width: 100%;
+				margin-right: 0;
+			}
+		}
+		.form_img_box{
+			position: absolute;
+			top: 0;
+			left: 0;
+			max-height: 200px;
+			width: 100%;
+			text-align: center;
+			img{
+				height: 200px;
+			}
+		}
+		.section3{
+			position: relative;
+			padding-top: 200px;
+		}
+
+		.form_error_box{
+			width: 100%;
+			margin-top: 20px;
+		}
+
+		.map_wrap{
+			display: block;
+			margin-right: -15px;
+			margin-left: -15px;
+			padding: 15px;
+			border-radius: 0;
+		}
+		.map_content{
+			width: 100%;
+			padding: 0;
+			margin-bottom: 20px;
+		}
+		.map_item{
+			width: auto;
+			margin-left: -15px;
+			margin-right: -15px;
+			min-height: 300px;
+		}
+
+		
+
+        .arcticmodal_container_box{
+            padding: 20px;
+        }
+
+        .arcticmodal-close{
+        	top: 10px;
+        }
+
+        .popup_list li{
+        	padding-left: 30px;
+        	&:before{
+	        	width: 20px;
+	        	height: 20px;
+	        	background: none;
+	        	color: #373737;
+	        }
+		}
+
+		.calc_new_disc_left{
+			float: none;
+			border-radius: 0;
+		}
+		.calc_new_disc_right{
+			border-left: none;
+			border-top: 1px solid #e5e5e5;
+			border-radius: 0;
+			.disc_content_imp{
+				font-size: 22px;
+				line-height: 32px;
+			}
+		}
+		.calc_form{
+			border-radius: 0;
+		}
+		.calc_new_disc {
+			border-radius: 0;
+		}
+		
+
+
+	}/* <!-- max-width: #{$w768 - 1px} --> */
+	
+
+	@media only screen and (max-width:$w576 - 1px) {
+		.text{
+			display: block;
+		}
+
+		.features_item .btn{
+			width: 100%;
+		}
+		.main_title {
+			font-size: 35px;
+			line-height: 40px;
+		}
+		.calc_box_bot {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+		.advantages_item_txt {
+			max-width: 150px;
+		}
+	}/* <!-- max-width: #{$w576 - 1px} --> */
+
+
+	@media only screen and (max-width:$w480 - 1px) {
+		.text{
+			display: block;
+		}
+	}/* <!-- max-width: #{$w480 - 1px} --> */
+
+ 
+/* <!-- maxw end 
+	============================================ --> */
+
+
+
