@@ -1,0 +1,26 @@
+	#content {
+        flex: 1 0 auto;
+    }
+        [class*="indent_box"]{
+            padding-top: 60px;
+            padding-bottom: 87px;
+        }
+        .indent_box_2{
+            padding-top: 35px;
+        }
+        .something_container{
+            @include transition(all, 1s, ease);
+
+        }
+
+        /* - - - - - - - - - - first screen - - - - - - - - - - */
+        
+        /* - - - - - - - - - -/ end of first screen - - - - - - - - - - */
+        
+        /* - - - - - - - - - - second screen - - - - - - - - - - */
+        
+        /* - - - - - - - - - -/ end of second screen - - - - - - - - - - */
+        
+        /* - - - - - - - - - - third screen - - - - - - - - - - */
+        
+        /* - - - - - - - - - -/ end of third screen - - - - - - - - - - */

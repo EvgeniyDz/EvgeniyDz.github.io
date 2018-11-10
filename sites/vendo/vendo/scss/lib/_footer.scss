@@ -1,0 +1,43 @@
+	#footer {
+        flex: 0 0 auto;
+    }
+    .footer_wrap{
+        background: url(../images/footer_bg.jpg) no-repeat center;
+        background-size: cover;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+    .footer_list{
+        li{
+            padding-left: 15px;
+            position: relative;
+            // &:not(:last-child){
+            //     margin-bottom: 5px;
+            // }
+            &::before{
+                content: '';
+                position: absolute;
+                top: 8px;
+                left: 0;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #e40000;
+            }
+            a{
+                color: #fff;
+                font-size: 12px;
+                line-height: 24px;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    .footer_contact_box{
+        &>*{
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }
+    }

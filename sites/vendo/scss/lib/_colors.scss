@@ -1,0 +1,44 @@
+$color-white: 	#fff;
+$color-grey: 	#aaa;
+$color-black:	#000;
+$color-red: 	#ff4136;
+$color-orange: 	#ff851b;
+$color-yellow: 	#ffdc00;
+$color-green: 	#2ecc40;
+$color-blue: 	#0074d9;
+$color-purple: 	#b10dc9;
+
+$colors: (
+  'white'	: $color-white,
+  'grey'	: $color-grey,
+  'black'	: $color-black,
+  'red'		: $color-red,
+  'orange'	: $color-orange,
+  'yellow'	: $color-yellow,
+  'green'	: $color-green,
+  'blue'	: $color-blue,
+  'purple'	: $color-purple,
+);
+
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    $key: map-get($colors, $key);
+    @return color($key);
+  }
+
+  @return $key;
+}
+
+
+// EXAMPLE START
+
+// div { background-color: color('white');} 
+// ====== OR (ИЛИ) ======
+// div { background-color: map-get($colors, 'yellow');} 
+
+// ==>>
+
+// div { background-color: #ffdc00; }
+
+// EXAMPLE END

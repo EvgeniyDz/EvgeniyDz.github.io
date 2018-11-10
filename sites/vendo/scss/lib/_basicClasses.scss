@@ -1,0 +1,762 @@
+        /*==========>>  3.1.      Float:;   <<==========*/
+            
+            .f_left {float:left;}
+            .f_right {float:right;}
+            .f_none {float:none;}
+
+        /*==========>>  3.2.      Text-align:;   <<==========*/
+
+            .al_left{text-align: left;}
+            .al_right{text-align:right;}
+            .al_center{text-align:center;}
+            .al_justify{text-align:justify;}
+        
+        /*==========>>  3.3.      INDENTS Zero   <<==========*/
+
+            .m_t_zero{ margin-top:0 !important;}
+            .m_b_zero{ margin-bottom:0 !important;}
+            .m_r_zero{ margin-right:0 !important;}
+            .m_l_zero{ margin-left:0 !important;}
+            .p_t_zero{ padding-top:0 !important;}
+            .p_b_zero{ padding-bottom:0 !important;}
+            .p_r_zero{ padding-right:0 !important;}
+            .p_l_zero{ padding-left:0 !important;}
+
+        /*==========>>  3.4.      Position :;   <<==========*/
+            
+            .p_abs{position: absolute;}
+            .p_rel{position: relative;}
+            .p_fix{position: fixed;}
+            .p_static{position: static;}
+
+            .full_abs{
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                display: block;
+                z-index: 99;
+            }
+            
+            .z-i9{z-index: 9;}
+
+        /*==========>>  3.5.      Clearfix   <<==========*/
+
+            .clear {
+                clear:both;
+                width:100%;
+                line-height:0;
+                font-size:0;
+            }
+            
+            .clearfix:after{
+              content: "";
+              display: block;
+              height: 0;
+              clear: both;
+              visibility: hidden;
+            }
+
+            .wrapper {overflow:hidden;}
+
+        /*==========>>  3.6.      Dispay:;   <<==========*/
+
+            .d_block{display:block;}
+            .d_ib{display:inline-block;}
+            .d_none{display:none;}
+
+            .d_t{display:table;}
+            .d_row{display:table-row;}
+            .d_tc{display:table-cell;}
+            
+            .d_f{display: flex;}
+            .d_if{display: inline-flex;}
+            
+
+            //  align-items  ==========>>
+            
+            // justify-content: center
+            .jc-center{
+                -webkit-justify-content: center;
+                        justify-content: center;
+            }
+            // justify-content: flex-start
+            .jc-start{
+                -webkit-justify-content: flex-start;
+                        justify-content: flex-start;
+            }
+            // justify-content: flex-end
+            .jc-end{
+                -webkit-justify-content: flex-end;
+                        justify-content: flex-end;
+            }
+            // justify-content: space-between
+            .justify-content-between,
+            .jc-between{
+                -webkit-justify-content: space-between;
+                        justify-content: space-between;
+            }
+            // justify-content: space-around
+            .jc-around{
+                -webkit-justify-content: space-around;
+                        justify-content: space-around;
+            }
+            // justify-content: space-evenly
+            .jc-around{
+                -webkit-justify-content: space-evenly;
+                        justify-content: space-evenly;
+            } 
+
+            //  align-items  ==========>>
+            
+            // align-items: flex-start
+            .al-it-start{
+                -webkit-align-items: flex-start;
+                        align-items: flex-start;
+            }
+            // align-items: flex-end
+            .al-it-end{
+                -webkit-align-items: flex-end;
+                        align-items: flex-end;
+            }
+            // align-items: center
+            .align-items-center,
+            .al-it-center{
+                -webkit-align-items: center;
+                        align-items: center;
+            }
+            // align-items: baseline
+            .al-it-baseline{
+                -webkit-align-items: baseline;
+                        align-items: baseline;
+            }
+            // align-items: stretch
+            .al-it-stretch{
+                -webkit-align-items: stretch;
+                        align-items: stretch;
+            }
+
+            //  align-self  ==========>>
+            
+            // align-self: auto
+            .al-s-auto{
+                -webkit-align-self: auto;
+                        align-self: auto;
+            }
+            // align-self: flex-start
+            .al-s-start{
+                -webkit-align-self: flex-start;
+                        align-self: flex-start;
+            }
+            // align-self: flex-end
+            .al-s-end{
+                -webkit-align-self: flex-end;
+                        align-self: flex-end;
+            }
+            // align-self: center
+            .al-s-center{
+                -webkit-align-self: center;
+                        align-self: center;
+            }
+            // align-self: baseline
+            .al-s-baseline{
+                -webkit-align-self: baseline;
+                        align-self: baseline;
+            }
+            // align-self: stretch
+            .al-s-stretch{
+                -webkit-align-self: stretch;
+                        align-self: stretch;
+            }
+
+            //  align-content  ==========>>
+            
+            // align-content: flex-start
+            .al-c-start{
+                -webkit-align-content: flex-start;
+                        align-content: flex-start;
+            }
+            // align-content: flex-end
+            .al-c-end{
+                -webkit-align-content: flex-end;
+                        align-content: flex-end;
+            }
+            // align-content: center
+            .al-c-center{
+                -webkit-align-content: center;
+                        align-content: center;
+            }
+            // align-content: space-between
+            .al-c-between{
+                -webkit-align-content: space-between;
+                        align-content: space-between;
+            }
+            // align-content: space-around
+            .al-c-around{
+                -webkit-align-content: space-around;
+                        align-content: space-around;
+            }
+            // align-content: stretch
+            .al-c-stretch{
+                -webkit-align-content: stretch;
+                        align-content: stretch;
+            }
+
+        /*==========>>  3.7.      LINKS   <<==========*/
+
+            * a,
+            * button{
+                @include transition(all,  0.7s, ease);
+                
+                &:hover{
+                   @include transition(all,  0.1s, ease);
+                }
+
+            }
+            [data-popup]{cursor: pointer;}
+            
+            
+            [class^="btn_"]{
+
+            }
+            .white_btn{
+                display: inline-block;
+                font-size: 14px;
+                line-height: 16px;
+                color: #fff;
+                padding: 8px 15px;
+                border: 1px solid #fff;
+                &:hover{
+                    border: 1px solid #111936;
+                    background-color: #fff;
+                    color: #111936;
+                }
+            }
+            .black_btn{
+                display: inline-block;
+                font-size: 14px;
+                line-height: 16px;
+                color: #000000;
+                padding: 8px 15px;
+                border: 1px solid #000000;
+                &:hover{
+                    border: 1px solid #fff;
+                    background-color: #000000;
+                    color: #fff;
+                }
+            }
+            .btn_red{
+                display: inline-block;
+                outline: none;
+                background: #e40000;
+                color: #fff;
+                font-size: 14px;
+                line-height: 22px;
+                padding: 4px 24px;                
+                border: 1px solid #e40000;
+                text-align: center;
+                cursor: pointer;
+                &:hover{
+                    opacity: 1;
+                    background: none;
+                    color: #e40000;
+                }
+            }
+            .btn_size{
+                // $default: false;
+                $default: (
+                    'padding'     : 15px,
+                    'font-size'   : false,
+                    'line-height' : 20px
+                );
+                @include btn-size($default);
+            }
+            .btn_black{
+                $default: false;
+                // $border: false;
+                // $default: (
+                //     'padding'     : false,
+                //     'font-size'   : 18px,
+                //     'line-height' : 1.2
+                // );
+                $border: ( 
+                  'width'  : 2px,
+                  'style'  : solid,
+                  'color'  : color('black')
+                );
+                
+                @include button-style($default, color('black'), color('white'), $border);
+                
+            }
+
+        /*==========>>  3.8.     TITLES   <<==========*/
+            
+            h1,h2,h3,h4,h5,h6{
+                margin-bottom: 20px;
+            }
+            
+            h1{
+                font-size: 40px;
+            }
+            h2{
+                font-size: 35px;
+            }
+            h3{
+                font-size: 30px;
+            }
+            h4{
+                font-size: 20px;
+            }
+            h5{
+                font-size: 18px;
+            }
+            h6{
+                font-size: 16px;
+            }
+
+            .footer_title{
+                font-size: 18px;
+                line-height: 20px;
+                margin-bottom: 30px;
+                color: #ffffff;
+            }
+            .slide_title{
+                font-size: 50px;
+                line-height: 60px;
+                font-weight: 700;
+                color: #fff;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: -50px;
+                    width: 225px;
+                    height: 2px;
+                    background-color: #fff;
+                }
+            }
+            .slide_title_bot{
+                display: inline-block;
+                font-size: 35px;
+                line-height: 40px;
+                font-weight: 700;
+                color: #fff;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: -50px;
+                    width: 225px;
+                    height: 2px;
+                    background-color: #fff;
+                }
+            }
+            .section_title1{                
+                font-size: 35px;
+                line-height: 40px;
+                font-weight: 700;
+                color: #000;
+                display: inline-block;
+                position: relative;
+                margin-bottom: 50px;
+                padding-bottom: 10px;
+                &:before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    left: -60px;
+                    width: 224px;
+                    height: 2px;
+                    background-color: #e40000;
+                }
+            }
+            .popup_form_title{
+                font-size: 35px;
+                line-height: 37px;
+                font-weight: 700;
+                margin-bottom: 15px;
+                font-family: 'Merriweather', serif;
+            }
+            .serv_top_title{
+                font-size: 35px;
+                line-height: 40px;
+                font-weight: 700;
+                color: #ffffff;
+                margin-bottom: 40px;
+            }
+
+            .section_title_txt{
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 40px;
+            }
+
+            // Lists
+            .list2{
+                display: inline-block;
+                text-align: left;
+                font-size: 14px;
+                line-height: 28px;
+              }
+          
+              .list2 li{
+                position: relative;
+                padding-left:20px;
+              }
+          
+              .list2 li:not(:last-child){
+                /*margin-bottom: 8px;*/
+              }
+          
+              .list2 li:before{
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 11px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #e40000;
+              }
+              .pages_list{
+                  padding-top: 40px;
+                  a{
+                    color: #081034 !important;
+                    font-size: 16px !important;
+                    // line-height: 18px !important;
+                  }
+                  
+              }
+              .serv_list{
+                  color: #ffffff;
+                  margin-bottom: 35px;
+                  li{
+                    font-size: 18px;
+                    line-height: 20px;
+                    padding-left: 35px;
+                    position: relative;
+                    &:not(:last-child){
+                        margin-bottom: 15px;
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 5px;
+                        left: 0;
+                        width: 15px;
+                        height: 12px;
+                        background: url(../images/icons/ok_icon.png) no-repeat;
+                    }
+                  }
+              }
+
+        /*==========>>  3.9.     FONTS   <<==========*/
+        
+            .proxima{
+                @include font-default('Proxima Nova Reg It', false, false, false);
+            }
+            
+        /*==========>>  3.10.     TEXTAFIELD   <<==========*/
+        
+            /*===  input  ===*/
+            
+            input:not(:placeholder-shown) {
+              /** input is not empty */
+            }
+
+            input:placeholder-shown {
+              /** input is empty */
+            }
+
+            .error_message{
+                color: red;
+                position: absolute;
+                top: 100%;
+                left: 0;
+            }
+
+            input,  
+            textarea {  
+                @include placeholder {
+                    @include transition( all, 0.5s, ease);
+                    color: inherit;
+                }
+
+                &:focus{
+                    @include placeholder {
+                        color: transparent;
+                    }
+                }
+            }
+            
+        /*==========>>  3.11.     BREADCRUMBS   <<==========*/
+            
+                .breadcrumbs{
+                    display: block;
+                    list-style: none;
+                    padding: 50px 0;                    
+                    
+                    &_it{
+                        position: relative;
+                        float: left;
+                        margin-right: 5px;
+                        padding-right: 8px;
+                        
+                        &:before{
+                            display: block;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            content: '|';
+                            color: #000000;
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                        
+                        a{
+                            text-decoration: none;
+                            color: #000000;
+                            font-size: 14px;
+                            line-height: 14px;
+                            font-weight: 300;
+                            
+                            &:hover span{
+                                text-decoration: underline;
+                            }
+
+                        }
+
+                    }
+
+                    & &_it:last-child:before{
+                        display: none;
+                    }
+
+                    & &_it:first-child a{
+                        padding-left: 0;
+                    }
+
+                    .breadcrumbs_current{
+                        font: {
+                            size: 14px;                            
+                            weight: 400;
+                        }
+                        line-height: 14px;
+                        color: #000000;
+                        &:hover span{
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+        /*==========>>  Pagination   <<==========*/
+            .pagination_box{
+                display: flex;
+                justify-content: center;
+            }
+            .pagination_list{
+                display: flex;
+                li{                    
+                    a{
+                        width: 32px;
+                        height: 32px;
+                        color: #000000;
+                        font-size: 14px;
+                        line-height: 32px;
+                        text-align: center;
+                        &:hover{
+                            background-color: #e40000;
+                            color: #ffffff;
+                            font-weight: 700;
+                        }
+                        &.current{
+                            background-color: #e40000;
+                            color: #ffffff;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+                
+        /*==========>>  3.12.     PRELOADER   <<==========*/
+        
+            #page-preloader {
+                position: fixed;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background: #081034;
+                z-index: 100500;
+                
+                .preloader {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    width:35px;
+                    height:35px;
+                    margin-top: -17.5px;
+                    margin-left: -17.5px;
+                    display:inline-block;
+                    padding:0px;
+                    border-radius:100%;
+                    border:2px solid;
+                    border-top-color:rgba(0,0,0, 0.65);
+                    border-bottom-color:rgba(0,0,0, 0.15);
+                    border-left-color:rgba(0,0,0, 0.65);
+                    border-right-color:rgba(0,0,0, 0.15);
+                    -webkit-animation: preloader 0.8s linear infinite;
+                    animation: preloader 0.8s linear infinite;
+                }
+            }
+
+            @keyframes preloader {
+               from {transform: rotate(0deg);}
+               to {transform: rotate(360deg);}
+            }
+            @-webkit-keyframes preloader {
+               from {-webkit-transform: rotate(0deg);}
+               to {-webkit-transform: rotate(360deg);}
+            }
+
+        /*==========>>  3.13.     ANCHOR TO TOP   <<==========*/
+
+    		.back_to_top {
+    	        border: none;
+    	        outline: none;
+    	        position: fixed;
+    	        bottom: 20px;
+    	        right: 20px;
+    	        width: 50px;
+    	        height: 50px;
+    	        border-radius: 5px;
+    	        text-align: center;
+    	        color: #fff;
+    	        background-color: #333;
+    	        z-index: 99;
+        	    
+                &:hover {
+        	        background-color: #081034;
+        	    }
+
+                i {
+                    font-size: 30px;
+                    line-height: 30px;
+                    margin: 0;
+                }
+
+        	    &.animated {
+        	        -webkit-animation-duration: 0.7s;
+        	        animation-duration: 0.7s;
+        	    }
+
+            }
+
+        /*==========>>  Offsets   <<==========*/
+        .section_offset{
+            padding-bottom: 90px;
+        }
+        .pt_90{
+            padding-top: 90px;
+        }
+
+        /* ------------------------------------------------
+
+        Animate
+
+        ------------------------------------------------ */
+
+        .animate_el{
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+
+        .tr_top{
+            -webkit-transform: translate(0, -40px);
+            -ms-transform: translate(0, -40px);
+            -o-transform: translate(0, -40px);
+            transform: translate(0, -40px);
+        }
+        .tr_bottom{
+            -webkit-transform: translate(0, 40px);
+            -ms-transform: translate(0, 40px);
+            -o-transform: translate(0, 40px);
+            transform: translate(0, 40px);
+        }
+        .tr_left{
+            -webkit-transform: translate(-40px, 0);
+            -ms-transform: translate(-40px, 0);
+            -o-transform: translate(-40px, 0);
+            transform: translate(-40px, 0);
+        }
+        .tr_right{
+            -webkit-transform: translate(40px, 0);
+            -ms-transform: translate(40px, 0);
+            -o-transform: translate(40px, 0);
+            transform: translate(40px, 0);
+        }
+
+        .swiper-slide-active .animate_el{
+            opacity: 1;
+            visibility: visible;
+            -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+            -o-transform: translate(0, 0);
+            transform: translate(0, 0);
+        }
+
+        .delay_1{
+            -webkit-transition-delay: 0.3s;
+            -o-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+        }
+
+        .delay_2{
+            -webkit-transition-delay: 0.6s;
+            -o-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+
+        .delay_3{
+            -webkit-transition-delay: 0.9s;
+            -o-transition-delay: 0.9s;
+            transition-delay: 0.9s;
+        }
+
+        .delay_4{
+            -webkit-transition-delay: 1.2s;
+            -o-transition-delay: 1.2s;
+            transition-delay: 1.2s;
+        }
+
+        .delay_5{
+            -webkit-transition-delay: 1.5s;
+            -o-transition-delay: 1.5s;
+            transition-delay: 1.5s;
+        }
+
+        .delay_6{
+            -webkit-transition-delay: 1.8s;
+            -o-transition-delay: 1.8s;
+            transition-delay: 1.8s;
+        }
+
+        .delay_7{
+            -webkit-transition-delay: 2.1s;
+            -o-transition-delay: 2.1s;
+            transition-delay: 2.1s;
+        }
+

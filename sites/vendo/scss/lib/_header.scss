@@ -1,0 +1,286 @@
+    #header {
+        // background-color: red;
+        position: relative;
+    }
+    .header_top{
+        background-color: #081034;        
+    }
+    .header_top_wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 0;
+    }
+    .logo{
+        
+        > a{
+            display:block;
+            text-decoration:none;
+            font-size: 0;
+            
+            > img{
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+    .header_social{
+        display: flex;
+        align-items: center;
+        li{            
+            &:not(:last-child){
+                margin-right: 15px;
+            }
+            a{
+                font-size: 0;
+                img{
+                    transition: 0.3s;
+                }
+                &:hover{
+                    img{
+                        transform: translate(0, -5px);
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+    .header_mail_box, .header_phone_box{
+        img{
+            margin-right: 10px;
+        }
+        a{
+            font-size: 12px;
+            line-height: 16px;
+            color: #fff;
+            &:hover{
+                opacity: 0.8;                
+            }
+        }
+    }
+    .header_phone_box{
+        a{
+            font-size: 14px;
+            line-height: 16px;
+        }
+        strong{
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+
+    .header_bot{
+        // background-color: #081034;
+        position: absolute;
+        z-index: 2;
+        // bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .header_bot_wrap{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 18px;
+    }
+    .navigation_menu{
+        flex-grow: 2;
+    }    
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header_serch_wrap{
+        // flex-grow: 1;
+        margin-left: 30px;        
+        position: relative;
+    }
+    .menu_item{
+        padding-top: 10px;
+        padding-bottom: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        a{
+            font-size: 14px;
+            line-height: 16px;
+            color: #fff;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #e40000;
+            transition: 0.3s;
+        }
+        &:hover{
+            &::before{
+                width: 100%;
+                transition: 0.3s;
+            }
+        }
+        &.current{
+            &::before{
+                width: 100%;                
+            }
+            a{
+                font-weight: 700;
+            }
+        }
+    }
+    .header_serch{
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        padding: 5px;
+        padding-right: 25px;
+        color: #fff;
+    }
+    .header_serch_btn{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+        font-size: 14px;
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+
+    .btn_nav {
+        display: block;
+        border: none;
+        outline: none;
+        width: 25px;
+        height: 26px;
+        cursor: pointer;
+        background-color: transparent;
+        position: relative;
+        display: none;
+        z-index: 1000;
+        padding: 0;
+        // float: right;
+      }
+      .btn_nav:before, .btn_nav:after, .btn_nav span {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 4px;
+        background-color: #fff;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+      .btn_nav span {
+        top: 11px;
+      }
+      .btn_nav:after {
+        top: auto;
+        bottom: 0px;
+      }
+      .btn_nav.active span {
+        display: none;
+      }
+      .btn_nav.active:before {
+        top: 12px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg); 
+      }
+      .btn_nav.active:after {
+        bottom: 10px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg); 
+      }
+      .mobile_menu{
+          display: none;
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: #081034; 
+          z-index: 999;
+          padding: 0 20px;
+          padding-top: 65px;
+          text-align: center;
+          .header_mail_box, .header_phone_box, .header_bot{
+            display: block !important;  
+            a{
+                color: #fff !important;
+            }
+        }
+        &>*{
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }
+        .menu{
+            flex-direction: column;           
+        }
+        .menu_item{
+            padding-top: 5px !important;
+            padding-bottom: 10px !important;
+        }
+        .header_social{
+            display: flex !important;
+            justify-content: center;
+        }
+        .header_serch_wrap{
+            margin-left: 0;
+            max-width: 300px;
+            margin: 0 auto;
+            input{
+                width: 100%;
+            }
+        }
+      }
+
+
+.header2{
+    .header_top{
+        background-color: #fff;        
+    }
+    .header_mail_box, .header_phone_box{
+        a{
+            color: #000;
+        }        
+    }
+    .menu_item{
+        padding-top: 2px;
+        padding-bottom: 20px;
+    }
+    .header_bot{
+        position: relative;
+        background-color: #081034;
+    }
+    .btn_nav:before, .btn_nav:after, .btn_nav span {
+        background-color: #000000;
+    }
+    .btn_nav.active:before { 
+        background-color: #fff;
+    }
+    .btn_nav.active:after {
+        background-color: #fff;
+    }
+    .header_serch_wrap{
+        margin-top: -10px;
+    }
+
+}
+
+
+
