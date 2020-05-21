@@ -1,0 +1,85 @@
+extends ../pug/templates/main
+
+block vars
+	- var title = "Контакты";
+	- var headerClasses = ['header_inner'];
+	- var footerClasses = ['footer1'];
+
+//- block title
+//- 	| Главная страница
+
+
+//- Content Start     ============================================ 
+
+
+block content
+
+	// Content Start     ============================================ 
+
+	main#content.p_rel
+
+		section.inner_section
+			.container
+				.container_inner
+					h1 Контакты
+
+					.contact_box
+						.contact_box_left
+							h4 Отдел продаж
+							.contact_row
+								.contact_item
+									.contact_title
+										p Телефон:
+									.contact_content
+										a(href="tel:+7 (495) 000-00-00").contact_tel_link +7 (495) 000-00-00
+										a(href="javascript:;" data-src="#call").modal_btn.contact_call Заказать обратный звонок
+								.contact_item.contact_item_icon
+									.contact_title
+										p E-mail:
+									.contact_content
+										.contact_icon
+											img(src="./images/icons/contact_icon1.png", alt="")
+										a(href="mailto:info@gorki-1.com").contact_mail info@gorki-1.com
+								.contact_item2.contact_item_icon
+									.contact_title
+										p Адрес:
+									.contact_content
+										.contact_icon
+											img(src="./images/icons/contact_icon2.png", alt="")
+										p Калужская область, Перемышльский район, ДНТ «Горки-1»
+						.contact_box_right
+							.contact_right_title
+								img(src="./images/icons/contact_icon3.png", alt="")
+								p Время работы:
+							.contact_right_content
+								strong Пн-Пт: 
+								p 9:00 - 20:00
+								strong Сб-Вс:
+								p 10:00 - 19:00
+
+					.contact_txt
+						h4 Как добраться из Москвы
+						.row
+							.col-lg-6
+								strong От МКАД по Киевскому шоссе:
+								p Добраться от МКАД до КП Горки 1 возможно по  скоростному Киевскому шоссе (М-3), двигаясь до поселка Детчино, затем свернув на одну из лучших федеральных трасс «Калуга – Тула» (Р-132) , за поселком Ахлебинино повернуть налево к реке, следуя указателям.
+							.col-lg-6
+								strong От МКАД по Симферопольскому шоссе:
+								p Добраться от МКАД до КП Горки 1 возможно по  скоростному Симферопольскому  шоссе (М-2), двигаясь до пересечения  с  трассой  «Калуга – Тула» (Р-132), далее после поселка Ломохино поворот направо к реке, следуя указателям к КП Горки-1.
+						h4 Как добраться из Калуги
+						p По федеральной трассе «Калуга – Тула» (Р-132) после поселка Ахлебинино повернуть налево к реке, следуя указателям.
+
+					.map#map
+
+
+
+		// - - - - - - - - - - - - - End of something_container - - - - - - - - - - - - - - - - 
+
+
+
+	// Content End       ============================================ 
+
+
+//- Content End       ============================================ 
+
+

@@ -1,0 +1,411 @@
+// /*** MIXINS ***/
+
+// =================  BACKGROUNDS START
+
+	@mixin vertical-gradient($from, $to) { //vertical top to bottom
+		background: $to;
+		background: -moz-linear-gradient(top, $from 0%, $to 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
+		background: -webkit-linear-gradient(top, $from 0%,$to 100%);
+		background: -o-linear-gradient(top, $from 0%,$to 100%);
+		background: linear-gradient(to bottom, $from 0%,$to 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$from}, endColorstr=#{$to})
+	}
+
+	// EXAMPLE START
+
+	// .my_div {
+	// 	@include vertical-gradient($color-white, $color-black);
+	// }
+	// EXAMPLE END
+
+	// =========================
+
+	@mixin horizontal-gradient($from, $to, $stop: 100%) {  //horizontal left to right
+	  /* fallback/image non-cover color */
+	  background-color: $from;
+
+	  /* Firefox 3.6+ */
+	  background-image: -moz-linear-gradient(left, $from 0%, $to $stop);
+
+	  /* Safari 4+, Chrome 1+ */
+	  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $from), color-stop($stop, $to));
+
+	  /* Safari 5.1+, Chrome 10+ */
+	  background-image: -webkit-linear-gradient(left, $from 0%, $to $stop);
+
+	  /* Opera 11.10+ */
+	  background-image: -o-linear-gradient(left, $from 0%, $to $stop);
+
+	  /* IE10+ */
+	  background: -ms-linear-gradient(left, $from 0%, $to $stop);
+
+	  /* Standard */
+	  background: linear-gradient(to right, $from 0%, $to $stop);
+
+	  /* IE6-9 */
+	  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+	}
+
+	// EXAMPLE START
+
+	// .my_div {
+	// 	@include horizontal-gradient($color-black, $color-white);
+	// }
+
+	// EXAMPLE END
+
+// =================  BACKGROUNDS END
+
+
+
+
+// =================  OPACITY START
+
+	@mixin opacity($opacity) {
+	  opacity: $opacity;
+	  $opacity-ie: $opacity * 100;
+	  filter: alpha(opacity=$opacity-ie); //IE8
+	}
+	
+
+	// EXAMPLE START
+
+	// .image{
+	//     @include opacity(.8);    
+	// }
+
+	// ==>>   
+
+	// .image{
+	//     opacity: 0.8;
+	//     filter: alpha(opacity=80);
+	// }
+
+	// EXAMPLE END
+
+// =================  OPACITY END
+
+
+
+
+// =================  CLEARFIX START
+
+	@mixin clearfix {
+
+		&::before,
+		&::after {
+			content: ''; 
+			display: block;
+		}
+
+		&::after {
+			clear: both;
+			height: 0;
+			visibility: hidden;
+		}
+
+	}
+
+	// EXAMPLE START
+
+	// .div{
+	//     @include clearfix();    
+	// }
+
+	// ==>>   
+
+	// .div:before,
+	// .div:after{
+	//     content: ''; 
+	// 	display: block;
+	// }
+	// .div:after{
+	//     clear: both;
+	// 	height: 0;
+	// 	visibility: hidden;
+	// }
+
+	// EXAMPLE END
+	
+// =================  CLEARFIX END
+
+
+
+
+// =================  BORDER START
+
+	@mixin border($width, $style, $color) {
+		border: $width#{'px'} $style $color;
+	}
+
+	// EXAMPLE START
+
+	// .div{
+		// @include border($width, $style, $color);
+	//     @include border(2px, dotted, $color-purple);    
+	// }
+
+	// ==>>   
+
+	// .div{
+	// 	border: 2px dotted #b10dc9;
+	// }
+
+	// EXAMPLE END
+
+// =================  BORDER END
+
+
+
+
+// =================  BTN START
+
+	@mixin btn-size($default) {
+		@if $default { 
+
+			@function default($key) {
+				@if map-has-key($default, $key) {
+					$key: map-get($default, $key);
+					@return default($key);
+				}
+
+				@return $key;
+			}
+
+			@if default(padding) {padding: default(padding);}
+			@if default(font-size) {font-size: default(font-size);}
+			@if default(line-height) {line-height: default(line-height);}
+		}
+	}
+
+
+	@mixin button-style($default, $bg, $color, $border){
+		@if $default { 
+
+			@function default($key) {
+				@if map-has-key($default, $key) {
+					$key: map-get($default, $key);
+					@return default($key);
+				}
+
+				@return $key;
+			}
+
+			@if default(padding) {padding: default(padding);}
+			@if default(font-size) {font-size: default(font-size);}
+			@if default(line-height) {line-height: default(line-height);}
+		}
+		background-color: $bg; // black
+		color: $color; // white
+		@if $border { 
+
+			@function border($key) {
+				@if map-has-key($border, $key) {
+					$key: map-get($border, $key);
+					@return border($key);
+				}
+
+				@return $key;
+			}
+
+			@if border(width) {border-width: border(width);}
+			@if border(style) {border-style: border(style);}
+			@if border(color) {border-color: border(color);}
+		}
+		
+		
+		&:hover {
+			background-color: $color; //white
+			color: $bg; //black
+			border-color: $bg; //black
+		}
+	}
+
+
+
+// =================  BTN END
+
+
+
+
+// =================  TRANSITION START
+
+	@mixin transition($property, $duration, $timing){
+	    -webkit-transition: $property $duration $timing;
+	       -moz-transition: $property $duration $timing;
+	        -ms-transition: $property $duration $timing;
+	         -o-transition: $property $duration $timing;
+	            transition: $property $duration $timing;
+	}
+
+	// EXAMPLE START
+
+	// .div{
+	//     @include transition(all, 1s, ease);
+	// }
+
+	// ==>>   
+
+	// .div{
+	// 	-webkit-transition: all 1s ease;
+	  // -moz-transition: all 1s ease;
+	  // -ms-transition: all 1s ease;
+	  // -o-transition: all 1s ease;
+	  // transition: all 1s ease;
+	// }
+
+	// EXAMPLE END
+
+// =================  TRANSITION END
+
+
+
+
+// =================  FONT START
+	
+	@mixin font-default($family: false, $size: false, $weight: false,  $lh: false) {
+	    @if $family {font-family: $family , #{Arial, Helvetica, sans-serif}; }
+	    @if $size { font-size: $size; }
+	    @if $weight { font-weight: $weight; }
+	    @if $lh { line-height: $lh; }
+	}
+
+	// @include font-default('Proxima Nova Reg It', 12px, false, 1.2);
+	
+// =================  FONT END
+
+
+
+
+// =================  TRANSITION START
+	
+	@mixin push-auto {
+	    margin: { 
+	        left: auto;
+	        right: auto;
+	    }
+	}
+
+	//@include push-auto();
+
+// =================  TRANSITION END
+
+
+
+
+// =================  TRIANGLE START
+
+	@mixin triangle($before-after, $color, $direction, $size){
+		position: relative;
+
+		@if $before-after == before {
+
+			&:before{
+				content: "";
+				position: absolute;
+			    width: 0;
+			    height: 0;
+			    top: 0;
+			    left: 0;
+			    
+			    @if $direction == bottom {
+			    	top: auto;
+			    	bottom: 0;
+			        margin-bottom: -$size;
+			        border-left: $size solid transparent;
+			        border-right: $size solid transparent;
+			        border-top: $size solid $color;
+			    } 
+			    @else if $direction == top {
+			    	top: 0;
+			        margin-top: -$size;
+			        border-left: $size solid transparent;
+			        border-right: $size solid transparent;
+			        border-bottom: $size solid $color;
+			    }
+			    @else if $direction == right {
+			    	left: auto;
+			    	right: 0;
+			        margin-right: -$size;
+			        border-top: $size solid transparent;
+			        border-bottom: $size solid transparent;
+			        border-left: $size solid $color;
+			    }
+			    @else if  $direction == left {
+			        left: 0;
+			        margin-left: -$size;
+			        border-top: $size solid transparent;
+			        border-bottom: $size solid transparent;
+			        border-right: $size solid $color;
+			    }
+			}
+		}
+
+		@if $before-after == after {
+
+			&:after{
+				content: "";
+				position: absolute;
+			    width: 0;
+			    height: 0;
+			    top: 0;
+			    left: 0;
+			    
+			    @if $direction == bottom {
+			    	top: auto;
+			    	bottom: 0;
+			        margin-bottom: -$size;
+			        border-left: $size solid transparent;
+			        border-right: $size solid transparent;
+			        border-top: $size solid $color;
+			    } 
+			    @else if $direction == top {
+			    	top: 0;
+			        margin-top: -$size;
+			        border-left: $size solid transparent;
+			        border-right: $size solid transparent;
+			        border-bottom: $size solid $color;
+			    }
+			    @else if $direction == right {
+			    	left: auto;
+			    	right: 0;
+			        margin-right: -$size;
+			        border-top: $size solid transparent;
+			        border-bottom: $size solid transparent;
+			        border-left: $size solid $color;
+			    }
+			    @else if  $direction == left {
+			        left: 0;
+			        margin-left: -$size;
+			        border-top: $size solid transparent;
+			        border-bottom: $size solid transparent;
+			        border-right: $size solid $color;
+			    }
+			}
+		}
+	    
+	}
+
+	// @include triangle(before, #000, right, 10px);
+
+// =================  TRIANGLE END
+
+
+
+
+// =================  PLACEHOLDER START
+
+@mixin placeholder {
+
+    &:-moz-placeholder { @content; }
+
+    &::-moz-placeholder { @content; }
+
+    &:-ms-input-placeholder { @content; }
+
+    &::-webkit-input-placeholder { @content; }
+
+}
+
+// =================  PLACEHOLDER END

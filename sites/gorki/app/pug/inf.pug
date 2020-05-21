@@ -1,0 +1,267 @@
+extends ../pug/templates/main
+
+block vars
+	- var title = "Инфраструктура";
+	- var headerClasses = ['header_inner'];
+	- var footerClasses = ['footer1'];
+
+//- block title
+//- 	| Главная страница
+
+
+//- Content Start     ============================================ 
+
+
+block content
+
+	// Content Start     ============================================ 
+
+	main#content.p_rel
+
+		section.inner_section.inf_section
+			.container
+				.container_inner
+					h1 Инфраструктура
+					p Каждая минута отдыха по-настоящему бесценна. Именно поэтому вся инфраструктура курортного поселка Горки-1 продумана специально для того, чтобы вы провели это время максимально комфортно – насладившись неспешностью загородной жизни или, наоборот, зарядившись яркими эмоциями от разнообразных активностей. Здесь «жизнь, как на курорте» - это не просто мечта, это ваш образ жизни.
+					.inf_content_wrap
+						.inf_item_road
+							img(src="./images/road_img.png", alt="")
+						.inf_items_wrap.inf_items_wrap1
+							.inf_item(style="height: 140px")
+								.inf_icon_wrap
+									span.inf_item_def
+									span.inf_item_active
+									.inf_icon
+										img(src="./images/icons/inf/inf_icon1.png", alt="" class="def")
+										img(src="./images/icons/inf/inf_icon1_active.png", alt="" class="active")
+								.inf_item_content
+									p.inf_item_title Ресторан
+									p.inf_item_txt Ресторан, расположенный на живописном берегу озера, предлагает безграничные возможности для наслаждения изысканной кухней и завораживающими видами круглый год в теплой, по-настоящему домашней атмосфере.
+							
+							.inf_item(style="height: 145px")
+								.inf_icon_wrap
+									span.inf_item_def
+									span.inf_item_active
+									.inf_icon
+										img(src="./images/icons/inf/inf_icon2.png", alt="" class="def")
+										img(src="./images/icons/inf/inf_icon2_active.png", alt="" class="active")
+								.inf_item_content
+									p.inf_item_title Теннисные корты
+									p.inf_item_txt Теннисные корты открытого и закрытого типа, построенные с учетом всех международных требований и стандартов. Благодаря этому, тренировки для любителей этого вида спорта будут доступны в любую погоду и время года. Весь инвентарь можно будет взять напрокат.
+
+							.inf_item(style="height: 160px")
+								.inf_icon_wrap
+									span.inf_item_def
+									span.inf_item_active
+									.inf_icon
+										img(src="./images/icons/inf/inf_icon3.png", alt="" class="def")
+										img(src="./images/icons/inf/inf_icon3_active.png", alt="" class="active")
+								.inf_item_content
+									p.inf_item_title Фитнес-клуб
+									p.inf_item_txt Великолепное оснащение фитнес-центра и высочайший сервис предоставляемых услуг на уровне столичных клубов позволят вам поддерживать себя в форме с привычным комфортом. А тем, кто только начинает свой «спортивный путь», подобрать подходящую программу тренировок помогут тренеры.
+
+							.inf_item(style="height: 185px")
+								.inf_icon_wrap
+									span.inf_item_def.animated(data-animation="fadeOut" data-animation-delay="100")
+									span.inf_item_active.animated(data-animation="fadeIn" data-animation-delay="100")
+									.inf_icon
+										img(src="./images/icons/inf/inf_icon4.png", alt="" class="def animated" data-animation="fadeOut" data-animation-delay="100")
+										img(src="./images/icons/inf/inf_icon4_active.png", alt="" class="active animated" data-animation="fadeIn" data-animation-delay="100")
+								.inf_item_content
+									p.inf_item_title Русская баня и чайная комната
+									p.inf_item_txt.animated(data-animation="fadeIn" data-animation-delay="100") Банный комплекс на территории – это пространство полного расслабления, очищения и омоложения. Что может быть лучше традиций настоящей русской бани с парением дубовыми и березовыми вениками, которое сможет быстро настроить вас на волну неспешной загородной жизни и комфортного отдыха, оставив все заботы города где-то позади. После банных процедур в нашей уютной чайной комнате Вас всегда будет ждать полезный, вкусный и ароматный чай на травах.
+
+							.inf_item(style="height: 205px")
+								.inf_icon_wrap
+									span.inf_item_def.animated(data-animation="fadeOut" data-animation-delay="100")
+									span.inf_item_active.animated(data-animation="fadeIn" data-animation-delay="100")
+									.inf_icon
+										img(src="./images/icons/inf/inf_icon5.png", alt="" class="def animated" data-animation="fadeOut" data-animation-delay="100")
+										img(src="./images/icons/inf/inf_icon5_active.png", alt="" class="active animated" data-animation="fadeIn" data-animation-delay="100")
+								.inf_item_content
+									p.inf_item_title Детский клуб
+									p.inf_item_txt.animated(data-animation="fadeIn" data-animation-delay="100") Детский клуб будет создан специально для того, чтобы время загородного отдыха для ваших детей прошло ярко, весело и с пользой! С детьми будут работать настоящие профессионалы, которые построят процесс обучения на познавательных и увлекательных играх. Неиссякаемая энергия малышей обязательно найдет здесь свое применение в творческих мастер-классах, спортивных играх, обучающих и развивающих занятиях. Здесь также можно будет устраивать такие яркие детские праздники, что ваши маленькие принцы и принцессы не захотят возвращаться в город!
+
+							.inf_item(style="height: 160px")
+								.inf_icon_wrap
+									span.inf_item_def.animated(data-animation="fadeOut" data-animation-delay="100")
+									span.inf_item_active.animated(data-animation="fadeIn" data-animation-delay="100")
+									.inf_icon
+										img(src="./images/icons/inf/inf_icon6.png", alt="" class="def animated" data-animation="fadeOut" data-animation-delay="100")
+										img(src="./images/icons/inf/inf_icon6_active.png", alt="" class="active animated" data-animation="fadeIn" data-animation-delay="100")
+								.inf_item_content
+									p.inf_item_title Вертолетная площадка
+									p.inf_item_txt.animated(data-animation="fadeIn" data-animation-delay="100") Для жителей поселка, которые пользуются услугами вертолетного транспорта, предусмотрено создание просторной оборудованной площадки, которая будет отвечает всем современным требованиям и техническим нормам и обеспечит комфортную посадку или взлет. Вы также сможете воспользоваться уникальной услугой аэротакси, которое максимально быстро доставит вас до точки назначения.
+
+							.inf_item(style="height: 160px")
+								.inf_icon_wrap
+									span.inf_item_def.animated(data-animation="fadeOut" data-animation-delay="100")
+									span.inf_item_active.animated(data-animation="fadeIn" data-animation-delay="100")
+									.inf_icon
+										img(src="./images/icons/inf/inf_icon7.png", alt="" class="def animated" data-animation="fadeOut" data-animation-delay="100")
+										img(src="./images/icons/inf/inf_icon7_active.png", alt="" class="active animated" data-animation="fadeIn" data-animation-delay="100")
+								.inf_item_content
+									p.inf_item_title Водные развлечения
+									p.inf_item_txt.animated(data-animation="fadeIn" data-animation-delay="100") Безмятежная гладь озера с чистой родниковой водой и продолжительная береговая линия реки Ока создают идеальные условия для ваших занятий водными видами спорта. Водно-спортивный клуб будет оказывать все необходимые услуги желающим попробовать свои силы в различных водных развлечениях. Романтичные прогулки на лодках или катание на гидроциклах и водных лыжах?
+
+							.inf_item(style="height: 165px")
+								.inf_icon_wrap
+									span.inf_item_def.animated(data-animation="fadeOut" data-animation-delay="100")
+									span.inf_item_active.animated(data-animation="fadeIn" data-animation-delay="100")
+									.inf_icon
+										img(src="./images/icons/inf/inf_icon8.png", alt="" class="def animated" data-animation="fadeOut" data-animation-delay="100")
+										img(src="./images/icons/inf/inf_icon8_active.png", alt="" class="active animated" data-animation="fadeIn" data-animation-delay="100")
+								.inf_item_content
+									p.inf_item_title Супермаркет
+									p.inf_item_txt.animated(data-animation="fadeIn" data-animation-delay="100") Вам не потребуется покидать пределы курортного поселка Горки-1, чтобы купить свежий хлеб к обеду, приобрести все необходимое для барбекю или совершить другие покупки для вашего дома – от собственного супермаркета с самым широким выбором продуктов высокого качества вас будет отделять лишь небольшая пешая прогулка.
+
+							.inf_item(style="height: 145px")
+								.inf_icon_wrap
+									span.inf_item_def.animated(data-animation="fadeOut" data-animation-delay="100")
+									span.inf_item_active.animated(data-animation="fadeIn" data-animation-delay="100")
+									.inf_icon
+										img(src="./images/icons/inf/inf_icon9.png", alt="" class="def animated" data-animation="fadeOut" data-animation-delay="100")
+										img(src="./images/icons/inf/inf_icon9_active.png", alt="" class="active animated" data-animation="fadeIn" data-animation-delay="100")
+								.inf_item_content
+									p.inf_item_title Охраняемая территория
+									p.inf_item_txt.animated(data-animation="fadeIn" data-animation-delay="100") В поселке предусмотрена закрытая, круглосуточно охраняемая территория с видеонаблюдением, что создаст у вас максимальное ощущение безопасности и уюта как на протяжении всего вашего периода нахождения за городом, так и во время городских будней.
+
+							.inf_item(style="height: 160px")
+								.inf_icon_wrap
+									span.inf_item_def.animated(data-animation="fadeOut" data-animation-delay="100")
+									span.inf_item_active.animated(data-animation="fadeIn" data-animation-delay="100")
+									.inf_icon
+										img(src="./images/icons/inf/inf_icon10.png", alt="" class="def animated" data-animation="fadeOut" data-animation-delay="100")
+										img(src="./images/icons/inf/inf_icon10_active.png", alt="" class="active animated" data-animation="fadeIn" data-animation-delay="100")
+								.inf_item_content
+									p.inf_item_title Все коммуникации и высокоскоростной интернет
+									p.inf_item_txt.animated(data-animation="fadeIn" data-animation-delay="100") Для вашего удобства в поселке Горки-1 будут подключены все необходимые коммуникации - газ, водоснабжение, электричество, канализация, а также высокоскоростной интернет. Благодаря этому, вы сможете не только проводить здесь с комфортом выходные, но и жить 365 дней в году, наслаждаясь всеми необходимыми условиями.
+
+						.inf_buy_wrap.mb10
+							.inf_buy_box
+								.inf_buy_left
+									h4
+										span Подобрать участок									
+										span на территории поселка
+								.inf_buy_right
+									a(href="javascript:;").btn_blue Подобрать
+							.buy_figure.buy_figure1
+								img(src="./images/figures/day_figure1.png", alt="")
+							.buy_figure.buy_figure2
+								img(src="./images/figures/day_figure2.png", alt="")
+							.buy_figure.buy_figure3
+								img(src="./images/figures/day_figure3.png", alt="")
+							.buy_figure.buy_figure4
+								img(src="./images/figures/day_figure4.png", alt="")
+							.buy_figure.buy_figure5
+								img(src="./images/figures/day_figure5.png", alt="")
+							.buy_figure.buy_figure6
+								img(src="./images/figures/day_figure6.png", alt="")
+							.buy_figure.buy_figure7
+								img(src="./images/figures/day_figure7.png", alt="")
+
+						.inf_items_wrap
+							.inf_item(style="height: 135px")
+								.inf_icon_wrap
+									span.inf_item_def.animated(data-animation="fadeOut" data-animation-delay="100")
+									span.inf_item_active.animated(data-animation="fadeIn" data-animation-delay="100")
+									.inf_icon
+										img(src="./images/icons/inf/inf_icon11.png", alt="" class="def animated" data-animation="fadeOut" data-animation-delay="100")
+										img(src="./images/icons/inf/inf_icon11_active.png", alt="" class="active animated" data-animation="fadeIn" data-animation-delay="100")
+								.inf_item_content
+									p.inf_item_title Храм
+									p.inf_item_txt.animated(data-animation="fadeIn" data-animation-delay="100") На территории поселка Горки-1 будет возведен православный храм-часовня, где будут проводиться регулярные богослужения по воскресным и праздничным дням.
+							
+							.inf_item(style="height: 135px")
+								.inf_icon_wrap
+									span.inf_item_def.animated(data-animation="fadeOut" data-animation-delay="100")
+									span.inf_item_active.animated(data-animation="fadeIn" data-animation-delay="100")
+									.inf_icon
+										img(src="./images/icons/inf/inf_icon12.png", alt="" class="def animated" data-animation="fadeOut" data-animation-delay="100")
+										img(src="./images/icons/inf/inf_icon12_active.png", alt="" class="active animated" data-animation="fadeIn" data-animation-delay="100")
+								.inf_item_content
+									p.inf_item_title Два озера
+									p.inf_item_txt.animated(data-animation="fadeIn" data-animation-delay="100") Два озера с кристально-чистой гладью воды станут настоящим центром притяжения для всех жителей курортного поселка Горки-1. Зимой здесь также найдутся развлечения для всей семьи – усовершенствуйте свои навыки фигурного катания, а после отогревайтесь горячим шоколадом на панорамной террасе ресторана.
+
+							.inf_item(style="height: 185px")
+								.inf_icon_wrap
+									span.inf_item_def.animated(data-animation="fadeOut" data-animation-delay="100")
+									span.inf_item_active.animated(data-animation="fadeIn" data-animation-delay="100")
+									.inf_icon
+										img(src="./images/icons/inf/inf_icon15.png", alt="" class="def animated" data-animation="fadeOut" data-animation-delay="100")
+										img(src="./images/icons/inf/inf_icon15_active.png", alt="" class="active animated" data-animation="fadeIn" data-animation-delay="100")
+								.inf_item_content
+									p.inf_item_title Заповедный лес
+									p.inf_item_txt.animated(data-animation="fadeIn" data-animation-delay="100") Поселок Горки-1 расположен в окружении заповедного леса, что не только формирует здесь идеальную экологическую обстановку, но и открывает новые возможности для отдыха всей семьей. Нет ничего лучше, чем оставить городские пробки и сумасшедший ритм позади, и просто проснуться под пение птиц, насладиться чистейшим воздухом и собрать полную корзину ягод и грибов.
+
+							.inf_item(style="height: 145px")
+								.inf_icon_wrap
+									span.inf_item_def.animated(data-animation="fadeOut" data-animation-delay="100")
+									span.inf_item_active.animated(data-animation="fadeIn" data-animation-delay="100")
+									.inf_icon
+										img(src="./images/icons/inf/inf_icon14.png", alt="" class="def animated" data-animation="fadeOut" data-animation-delay="100")
+										img(src="./images/icons/inf/inf_icon14_active.png", alt="" class="active animated" data-animation="fadeIn" data-animation-delay="100")
+								.inf_item_content
+									p.inf_item_title Первая береговая линия р.Ока
+									p.inf_item_txt.animated(data-animation="fadeIn" data-animation-delay="100") Атмосфера курорта не была бы максимально идеальной, если бы здесь не было пляжа с разнообразными активностями на любой вкус. В поселке Горки-1 вы сможете совершать увлекательные речные прогулки по полноводной Оке, загорать и купаться на собственном обустроенном пляже или же отправиться на рыбалку.
+
+							.inf_item(style="height: 200px")
+								.inf_icon_wrap
+									span.inf_item_def.animated(data-animation="fadeOut" data-animation-delay="100")
+									span.inf_item_active.animated(data-animation="fadeIn" data-animation-delay="100")
+									.inf_icon
+										img(src="./images/icons/inf/inf_icon13.png", alt="" class="def animated" data-animation="fadeOut" data-animation-delay="100")
+										img(src="./images/icons/inf/inf_icon13_active.png", alt="" class="active animated" data-animation="fadeIn" data-animation-delay="100")
+								.inf_item_content
+									p.inf_item_title Прогулка по территории
+									p.inf_item_txt.animated(data-animation="fadeIn" data-animation-delay="100") Благоустроенная территория поселка с прогулочными дорожками посреди альпийских горок и ухоженных клумб создана для того, чтобы сделать каждый день вашего пребывания здесь запоминающимся. Пробежаться по ухоженным дорожкам с собакой, покататься на великах или же просто отправиться на прогулку, чтобы подышать свежим воздухом – наслаждайтесь свободой выбора и выбирайте подходящий для себя досуг.
+
+
+						.form_box
+							.title5 Это место нужно увидеть вживую!
+							.title4 Запишитесь на просмотр участка, чтобы увидеть своими глазами
+							form(action="").validate.main_form
+								.row
+									.col-md-4
+										.input_box
+											label(for="name") Ваше имя
+												span *
+											input(type="text" id="name" name="name")
+									.col-md-4
+										.input_box
+											label(for="tel") Номер телефона
+												span *
+											input(type="tel" id="tel" name="tel").input_tel
+									.col-md-4
+										.input_box
+											label(for="date") Желаемая дата
+												span *
+											.select_wrap
+												input(type="text" class="datepicker-here" data-position="bottom left" name="date")
+									.col-12
+										.input_check_wrap
+											input(type="checkbox" id="check" name="check")
+											label(for="check") Нажатием кнопки «Записаться на просмотр» я даю своё согласие на обработку персональных данных. 
+												br
+												| С
+												a(href="javascript:;") политикой обработки персональных данных
+												|  ознакомлен и согласен.
+								button.btn_green Записаться на просмотр
+
+
+		.bot_bg
+			img(src="./images/main_bottom_bg.jpg", alt="")
+
+
+		
+
+		// - - - - - - - - - - - - - End of something_container - - - - - - - - - - - - - - - - 
+
+
+
+	// Content End       ============================================ 
+
+
+//- Content End       ============================================ 
+
+

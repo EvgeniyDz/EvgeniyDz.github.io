@@ -1,0 +1,49 @@
+//- block vars
+header#header(class=headerClasses)
+
+
+
+	section(class="header_container")
+		div(class="container")
+			.container_inner
+
+				.header_wrap
+
+					// - - - - - - - - - - - - - Logo - - - - - - - - - - - - - - - - 
+
+					.header_left
+						div(class="logo")
+							a(href="index.html")
+
+					// - - - - - - - - - - - - - End of Logo - - - - - - - - - - - - - - - - 
+
+					//  - - - - - - - - - - - - - Page Navigation - - - - - - - - - - - - - - - - 
+					
+					button.menu_btn
+						i.fa.fa-bars
+					.header_right
+						button.close_btn
+							i.fa.fa-times
+						.header_right_top
+							.header_links_box
+								a(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox).header_film_link Фильм о поселке
+							.header_links_box
+								a(href="tel:+7 (495) 000-00-00").header_tel_link +7 (495) 000-00-00
+								a(href="javascript:;" data-src="#call").btn_green.modal_btn Обратный звонок
+								
+						nav(id="primary_nav" class="navigation_menu")
+							menu(id="menu" class="menu clearfix")
+								li(class="menu_item current")
+									<a class="menu_link" href="index.html">о поселке</a>
+								li(class="menu_item")
+									<a class="menu_link" href="javascript:;">выбор участка</a>
+								li(class="menu_item")
+									<a class="menu_link" href="javascript:;">инфраструктура</a>
+								li(class="menu_item")
+									<a class="menu_link" href="javascript:;">фотогалерея</a>
+								li(class="menu_item")
+									<a class="menu_link" href="javascript:;">новости</a>
+								li(class="menu_item")
+									<a class="menu_link" href="javascript:;">контакты</a>
+
+					//  - - - - - - - - - - - - - End of Page Navigation - - - - - - - - - - - - - - - - 

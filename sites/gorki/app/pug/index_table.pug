@@ -1,0 +1,112 @@
+extends ../pug/templates/main
+
+block vars
+	- var title = "Главная страница";
+	- var headerClasses = ['header_inner'];
+	- var footerClasses = ['footer1'];
+
+//- block title
+//- 	| Главная страница
+
+
+//- Content Start     ============================================ 
+
+
+block content
+
+	// Content Start     ============================================ 
+
+	main#content.p_rel
+
+		section.first_screen_section.main_carousel.slick-carousel
+			.first_screen_item
+				.container
+					.container_inner
+						.first_screen_box
+							h1 Жизнь, как на курорте 365 дней в году
+							.first_screen_content
+								p Загородные дома в курортном поселке с собственным пляжем, водными развлечениями, теннисным кортом и фитнес-клубом. 
+			.first_screen_item
+				.container
+					.container_inner
+						.first_screen_box
+							h1 Lorem ipsum dolor sit amet consectetur.
+							.first_screen_content
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, suscipit in!
+			.first_screen_item
+				.container
+					.container_inner
+						.first_screen_box
+							h1 Lorem ipsum dolor sit.
+							.first_screen_content
+								p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis corrupti dolor consequuntur natus explicabo esse. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis corrupti dolor consequuntur natus explicabo esse. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis corrupti dolor consequuntur natus explicabo esse.		
+
+
+		section.table_section
+			.section_offset
+				.container
+					.container_inner
+						h3 Стоимость участков
+						.table_filters_wrap
+							.table_filters_left
+								p.range_title Площадь:
+								.range_box
+									input(type="text" class="range")
+								.range_value
+									span.val_from
+									span -
+									span.val_to
+									span соток
+							.table_filter_right
+								p.range_title Показать:
+								ul.tab_list
+									li.current_tab
+										button
+											img(src="./images/icons/tab_icon1.png", alt="").default
+											img(src="./images/icons/tab_icon1_active.png", alt="").active
+											| Участки с домами
+									li
+										button
+											img(src="./images/icons/tab_icon2.png", alt="").default
+											img(src="./images/icons/tab_icon2_active.png", alt="").active
+											| Участки
+						.table_wrap
+							table.main_table
+								thead
+									tr
+										th Фото
+										th Площадь
+										th Цена, руб.
+											button
+												img(src="./images/icons/arrow_up.png", alt="")
+										th Описание
+										th Номер участка
+								tbody
+									tr.filter_noresult
+										td(colspan="5")
+											.no_result
+												p По данному запросу ничего не было найдено. 
+												span
+													a(href="javascript:;") Сбросьте фильтр
+													|  или измените критерии поиска.
+
+
+						.load_more_wrap
+							button.load_more_btn Загрузить еще 
+								span (+8)
+						
+						br
+						br
+		
+
+		// - - - - - - - - - - - - - End of something_container - - - - - - - - - - - - - - - - 
+
+
+	
+	
+	// Content End       ============================================ 
+
+
+//- Content End       ============================================ 
+
+

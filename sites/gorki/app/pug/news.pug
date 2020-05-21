@@ -1,0 +1,122 @@
+extends ../pug/templates/main
+
+block vars
+	- var title = "Новости";
+	- var headerClasses = ['header_inner'];
+	- var footerClasses = ['footer1'];
+
+//- block title
+//- 	| Главная страница
+
+
+//- Content Start     ============================================ 
+
+
+block content
+
+	// Content Start     ============================================ 
+
+	main#content.p_rel
+
+		section.inner_section
+			.container
+				.container_inner
+					h1 Новости
+
+					.news_wrap
+						a(href="javascript:;").news_item_big
+							span.news_item_img(style="background-image: url(./images/news/news_img1.jpg)")
+							span.news_item_content
+								p.news_item_title Название для статьи, которая занимает несколько строк столбика
+								p.news_item_txt Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло. Его многочисленные, убого тонкие по сравнению с остальным ...
+								p.news_item_date 2 апреля 2019 г.
+
+						a(href="javascript:;").news_item_small
+							span.news_item_img(style="background-image: url(./images/news/news_img2.jpg)")
+							span.news_item_content(data-mh="news_item_content")
+								p.news_item_title Его комната, настоящая, разве что слишком маленькая, но обычная комната
+								p.news_item_date 2 апреля 2019 г.
+
+						a(href="javascript:;").news_item_small
+							span.news_item_img(style="background-image: url(./images/news/news_img3.jpg)")
+							span.news_item_content(data-mh="news_item_content")
+								p.news_item_title Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое 
+								p.news_item_date 2 апреля 2019 г.
+
+						a(href="javascript:;").news_item_small
+							span.news_item_img(style="background-image: url(./images/news/news_img4.jpg)")
+							span.news_item_content(data-mh="news_item_content")
+								p.news_item_title Над столом, где были разложены распакованные образцы сукон
+								p.news_item_date 2 апреля 2019 г.
+
+						a(href="javascript:;").news_item_small
+							span.news_item_img(style="background-image: url(./images/news/news_img5.jpg)")
+							span.news_item_content(data-mh="news_item_content")
+								p.news_item_title Его комната, настоящая, разве что слишком маленькая, но обычная комната
+								p.news_item_date 2 апреля 2019 г.
+
+						a(href="javascript:;").news_item_small
+							span.news_item_img(style="background-image: url(./images/news/news_img6.jpg)")
+							span.news_item_content(data-mh="news_item_content")
+								p.news_item_title Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое
+								p.news_item_date 2 апреля 2019 г.
+
+						a(href="javascript:;").news_item_small
+							span.news_item_img(style="background-image: url(./images/news/news_img7.jpg)")
+							span.news_item_content(data-mh="news_item_content")
+								p.news_item_title Над столом, где были разложены распакованные образцы сукон
+								p.news_item_date 2 апреля 2019 г.
+
+						
+					.load_more_wrap
+						button.load_more_btn Загрузить еще 
+							span (+8)
+
+
+					section.form_section
+						.section_offset
+							.container
+								.container_inner
+									.form_box
+										.title5 Это место нужно увидеть вживую!
+										.title4 Запишитесь на просмотр участка, чтобы увидеть своими глазами.
+										form(action="").validate.main_form
+											.row
+												.col-md-4
+													.input_box
+														label(for="name") Ваше имя
+															span *
+														input(type="text" id="name" name="name")
+												.col-md-4
+													.input_box
+														label(for="tel") Номер телефона
+															span *
+														input(type="tel" id="tel" name="tel").input_tel
+												.col-md-4
+													.input_box
+														label(for="date") Желаемая дата
+															span *
+														.select_wrap
+															input(type="text" class="datepicker-here" data-position="bottom left" name="date")
+												.col-12
+													.input_check_wrap
+														input(type="checkbox" id="check" name="check")
+														label(for="check") Нажатием кнопки «Записаться на просмотр» я даю своё согласие на обработку персональных данных. 
+															br
+															| С
+															a(href="javascript:;") политикой обработки персональных данных
+															|  ознакомлен и согласен.
+											button.btn_green Записаться на просмотр
+		
+		.bot_bg
+			img(src="./images/main_bottom_bg.jpg", alt="")
+		// - - - - - - - - - - - - - End of something_container - - - - - - - - - - - - - - - - 
+
+
+
+	// Content End       ============================================ 
+
+
+//- Content End       ============================================ 
+
+

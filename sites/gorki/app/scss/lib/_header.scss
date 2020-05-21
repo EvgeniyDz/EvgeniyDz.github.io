@@ -1,0 +1,232 @@
+header {
+    // background-color: red;
+    position: relative;
+    z-index: 2;
+}
+.header1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    .logo{
+        a{
+            background-image: url(../images/logo.png);
+        }
+    }
+}
+
+.logo{
+    a{
+        width: 127px;
+        height: 122px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.header_wrap{
+    display: flex;
+    align-items: stretch;
+    padding: 20px 0;
+}
+.header_left{
+    margin-right: 15px;
+}
+.header_right{
+    flex-grow: 2;
+    padding-left: 105px;   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; 
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 90px;
+        height: 1px;
+        background-color: rgba(#ffffff, 0.3);
+    }
+}
+.header_right_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    width: 100%;
+}
+.header_links_box{
+    display: flex;
+    align-items: center;
+}
+
+.header_film_link{
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: underline !important;
+    position: relative;
+    padding-left: 40px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        background: url(../images/icons/header_play_icon.png) no-repeat;
+    }
+    &:hover{
+        text-decoration: none !important;
+    }
+}
+
+.header_tel_link{
+    font-size: 21px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    position: relative;
+    padding-left: 40px;
+    margin-right: 25px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 25px;
+        height: 20px;
+        background: url(../images/icons/header_tel_icon.png) no-repeat;
+    }
+    &:hover{
+        color: #93c03c;
+    }
+}
+
+.navigation_menu{
+    width: 100%;
+    // margin-right: -15px;
+    // margin-left: -15px; 
+    .menu{
+        width: 100%;
+        display: flex;        
+    }
+    li{   
+        // display: inline-block;
+        // padding: 0 15px;
+        border-bottom: 1px solid rgba(#ffffff, 0.3);  
+        &:not(:last-child){
+            padding-right: 18px;
+        }  
+        &:not(:first-child){
+            padding-left: 18px;
+        }    
+        a{
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: 500;
+            padding-bottom: 15px;  
+            position: relative;           
+            // padding-left: 15px;
+            // padding-right: 15px;           
+        }
+        &.current{
+            border-bottom: none;
+            a{
+                &::before{
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    right: 0;
+                    height: 10px;
+                    background: url(../images/current_menu.png);
+                    background-repeat: repeat-x;
+
+                }
+            }
+            &:hover{            
+                a{
+                    color: #ffffff; 
+                } 
+            }
+        }
+        &:hover{            
+            a{
+                color: #93c03c; 
+            } 
+        }
+    }
+}
+
+.menu_btn{
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-size: 25px;
+    display: none;
+    &:hover{
+        color: #93c03c; 
+    }
+}
+.close_btn{
+    display: none;
+}
+
+.header_inner{
+    position: static;
+    background-color: #fff;
+    .menu_btn{
+        color: #404041;
+    }
+    .header_wrap{
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+    .logo{
+        a{
+            background-image: url(../images/logo_inner.png);
+        }
+    }
+    .header_film_link, .header_tel_link{
+        color: #404041;
+    }
+    .header_tel_link{
+        &:hover{
+            color: #93c03c;
+        }
+    }
+    .navigation_menu{
+        li{
+            border-bottom: 1px solid #c5c5c6;
+            a{
+                color: #404041;
+                &:hover{
+                    color: #93c03c;
+                }
+            }
+            &.current{
+                border-bottom: none;
+                a{
+                    &:hover{
+                        color: #404041;
+                    }
+                }
+            }
+        }
+    }
+    .header_right::before{
+        background-color: #c5c5c6;
+    }
+}
+
+
+
+

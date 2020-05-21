@@ -1,0 +1,642 @@
+extends ../pug/templates/main
+
+block vars
+	- var title = "Главная страница";
+	- var headerClasses = ['header_inner'];
+	- var footerClasses = ['footer1'];
+
+//- block title
+//- 	| Главная страница
+
+
+//- Content Start     ============================================ 
+
+
+block content
+
+	// Content Start     ============================================ 
+
+	main#content.p_rel
+
+		section.first_screen_section.main_carousel.slick-carousel
+			.first_screen_item
+				.container
+					.container_inner
+						.first_screen_box
+							h1 Жизнь, как на курорте 365 дней в году
+							.first_screen_content
+								p Загородные дома в курортном поселке с собственным пляжем, водными развлечениями, теннисным кортом и фитнес-клубом. 
+			.first_screen_item
+				.container
+					.container_inner
+						.first_screen_box
+							h1 Lorem ipsum dolor sit amet consectetur.
+							.first_screen_content
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, suscipit in!
+			.first_screen_item
+				.container
+					.container_inner
+						.first_screen_box
+							h1 Lorem ipsum dolor sit.
+							.first_screen_content
+								p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis corrupti dolor consequuntur natus explicabo esse. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis corrupti dolor consequuntur natus explicabo esse. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis corrupti dolor consequuntur natus explicabo esse.
+
+		section.features_section1
+			.section_offset
+				.container
+					.container_inner
+						h3 Уникальная инфраструктура
+						.features_wrap
+							.row.no-gutters
+								.col-lg-6
+									.features_item
+										.features_bg(style="background-image: url(./images/features/features_img1.jpg)")
+										.features_content
+											.features_content_top
+												.features_title_wrap(data-mh="features_title")
+													.features_title_img
+														img(src="./images/icons/features/features_icon1.png", alt="")
+													p.features_title Ресторан
+												p.features_txt Наслаждайтесь гастрономическими изысками в ресторане с панорамным видом на озеро
+											.features_content_bot
+												a(href="javascript:;" data-src="#features_popup").modal_btn Подробнее
+								.col-lg-6
+									.features_item
+										.features_bg(style="background-image: url(./images/features/features_img2.jpg)")
+										.features_content
+											.features_content_top
+												.features_title_wrap(data-mh="features_title")
+													.features_title_img
+														img(src="./images/icons/features/features_icon2.png", alt="")
+													p.features_title Теннисные корты
+												p.features_txt Получайте мощную эмоциональную разрядку и улучшайте свои игровые навыки на корте
+											.features_content_bot
+												a(href="javascript:;" data-src="#features_popup").modal_btn Подробнее
+								.col-lg-6
+									.features_item
+										.features_bg(style="background-image: url(./images/features/features_img3.jpg)")
+										.features_content
+											.features_content_top
+												.features_title_wrap(data-mh="features_title")
+													.features_title_img
+														img(src="./images/icons/features/features_icon3.png", alt="")
+													p.features_title Все коммуникации 
+														br
+														| и высокоскоростной интернет
+												p.features_txt Пользуйтесь всеми необходимыми коммуникациями для жизни в поселке круглый год
+											.features_content_bot
+												a(href="javascript:;" data-src="#features_popup").modal_btn Подробнее
+								.col-lg-6
+									.features_item
+										.features_bg(style="background-image: url(./images/features/features_img4.jpg)")
+										.features_content
+											.features_content_top
+												.features_title_wrap(data-mh="features_title")
+													.features_title_img
+														img(src="./images/icons/features/features_icon4.png", alt="")
+													p.features_title Фитнес клуб
+												p.features_txt Поддерживайте себя в форме или устанавливайте новые рекорды в просторном тренажерном зале
+											.features_content_bot
+												a(href="javascript:;" data-src="#features_popup").modal_btn Подробнее
+								.col-lg-6
+									.features_item
+										.features_bg(style="background-image: url(./images/features/features_img5.jpg)")
+										.features_content
+											.features_content_top
+												.features_title_wrap(data-mh="features_title")
+													.features_title_img
+														img(src="./images/icons/features/features_icon5.png", alt="")
+													p.features_title Русская баня и чайная комната
+												p.features_txt Восстанавливайте силы и укрепляйте организм в лучших традициях русской бани
+											.features_content_bot
+												a(href="javascript:;" data-src="#features_popup").modal_btn Подробнее
+								.col-lg-6
+									.features_item
+										.features_bg(style="background-image: url(./images/features/features_img6.jpg)")
+										.features_content
+											.features_content_top
+												.features_title_wrap(data-mh="features_title")
+													.features_title_img
+														img(src="./images/icons/features/features_icon6.png", alt="")
+													p.features_title Детский клуб
+												p.features_txt Раскрывайте потенциал ваших детей в детском развивающем клубе
+											.features_content_bot
+												a(href="javascript:;" data-src="#features_popup").modal_btn Подробнее
+								.col-lg-6
+									.features_item
+										.features_bg(style="background-image: url(./images/features/features_img7.jpg)")
+										.features_content
+											.features_content_top
+												.features_title_wrap(data-mh="features_title")
+													.features_title_img
+														img(src="./images/icons/features/features_icon7.png", alt="")
+													p.features_title Вертолетная площадка
+												p.features_txt Пользуйтесь услугами аэротакси с комфортной вертолетной площадкой
+											.features_content_bot
+												a(href="javascript:;" data-src="#features_popup").modal_btn Подробнее
+								.col-lg-6
+									.features_item
+										.features_bg(style="background-image: url(./images/features/features_img8.jpg)")
+										.features_content
+											.features_content_top
+												.features_title_wrap(data-mh="features_title")
+													.features_title_img
+														img(src="./images/icons/features/features_icon8.png", alt="")
+													p.features_title Храм на территории поселка
+												p.features_txt На территории поселка Горки-1 будет возведен православный храм-часовня, где будут проводиться регулярные богослужения по воскресным и праздничным дням.
+											.features_content_bot
+												a(href="javascript:;" data-src="#features_popup").modal_btn Подробнее
+								.col-lg-6
+									.features_item
+										.features_bg(style="background-image: url(./images/features/features_img9.jpg)")
+										.features_content
+											.features_content_top
+												.features_title_wrap(data-mh="features_title")
+													.features_title_img
+														img(src="./images/icons/features/features_icon9.png", alt="")
+													p.features_title Супермакет рядом
+												p.features_txt Покупайте самые свежие продукты в собственном супермаркете
+											.features_content_bot
+												a(href="javascript:;" data-src="#features_popup").modal_btn Подробнее
+								.col-lg-6
+									.features_item
+										.features_bg(style="background-image: url(./images/features/features_img10.jpg)")
+										.features_content
+											.features_content_top
+												.features_title_wrap(data-mh="features_title")
+													.features_title_img
+														img(src="./images/icons/features/features_icon10.png", alt="")
+													p.features_title Охраняемая территория
+												p.features_txt Отдыхайте загородом в полной безопасности и не беспокойтесь за свое имущество пока вы в городе
+											.features_content_bot
+												a(href="javascript:;" data-src="#features_popup").modal_btn Подробнее
+								.col-lg-12
+									.features_item
+										.features_bg(style="background-image: url(./images/features/features_img11.jpg)")
+										.features_content
+											.features_content_top
+												.features_title_wrap(data-mh="features_title")
+													.features_title_img
+														img(src="./images/icons/features/features_icon11.png", alt="")
+													p.features_title Водные развлечения
+												p.features_txt Наслаждайтесь всеми преимуществами жизни у воды
+											.features_content_bot
+												a(href="javascript:;" data-src="#features_popup").modal_btn Подробнее
+
+		section.day_section
+			.section_offset
+				.container
+					.container_inner
+						.day_box
+							.day_box_left
+								.day_img
+									img(src="./images/day_img.png", alt="")
+								a(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="2").day_link
+									.day_link_img.day_link_img1
+										img(src="./images/icons/play_icon_white.png", alt="")
+									.day_link_img.day_link_img2
+										img(src="./images/icons/play_icon_blue.png", alt="")
+									span Смотреть видео
+							.day_box_right
+								h4
+									span Один день									
+									span жизни поселка
+								p В этом видео представлен обзор как выглядит один день в поселке. Мы постарались уместить в коротком видео то, как можно провести время.
+							.day_figure.day_figure3
+								img(src="./images/figures/day_figure3.png", alt="")
+							.day_figure.day_figure4
+								img(src="./images/figures/day_figure4.png", alt="")
+			
+			.day_figure.day_figure1
+				img(src="./images/figures/day_figure1.png", alt="")
+			.day_figure.day_figure2
+				img(src="./images/figures/day_figure2.png", alt="")
+			.day_figure.day_figure5
+				img(src="./images/figures/day_figure5.png", alt="")
+			.day_figure.day_figure6
+				img(src="./images/figures/day_figure6.png", alt="")
+			.day_figure.day_figure7
+				img(src="./images/figures/day_figure7.png", alt="")
+
+
+		
+		section.scheme_section
+			.section_offset
+				.container
+					.container_inner
+						h3 Схема поселка
+			.scheme_img_wrap
+				img(src="./images/scheme_img.jpg", alt="")
+
+		section.table_section
+			.section_offset
+				.container
+					.container_inner
+						h3 Стоимость участков
+						.table_filters_wrap
+							.table_filters_left
+								p.range_title Площадь:
+								.range_box
+									input(type="text" class="range")
+								.range_value
+									span.val_from
+									span -
+									span.val_to
+									span соток
+							.table_filter_right
+								p.range_title Показать:
+								ul.tab_list
+									li.current_tab
+										button
+											img(src="./images/icons/tab_icon1.png", alt="").default
+											img(src="./images/icons/tab_icon1_active.png", alt="").active
+											| Участки с домами
+									li
+										button
+											img(src="./images/icons/tab_icon2.png", alt="").default
+											img(src="./images/icons/tab_icon2_active.png", alt="").active
+											| Участки
+						.table_wrap
+							table.main_table
+								thead
+									tr
+										th 
+											button Фото
+										th
+											button Площадь
+										th
+											button Цена, руб.											
+											span
+												img(src="./images/icons/arrow_up.png", alt="")
+										th 
+											button Описание
+										th 
+											button Номер участка
+								tbody
+									tr(data-src="#popup_item").modal_btn.modal_btn_table
+										td
+											.table_photo
+												.table_img(style="background-image: url(./images/table_img1.jpg)")
+										td
+											p.table_area
+												span 6.82 сот.
+												|  участок
+											p.table_area
+												span 113 м2
+												|  дом
+										td
+											p.table_price_sell 3 000 000 руб.
+											p.table_price
+												span 2 880 000
+												|  руб.
+										td
+											.table_label.label_blue Акция
+										td 5
+									tr(data-src="#popup_item").modal_btn.modal_btn_table
+										td
+											.table_photo
+										td
+											p.table_area
+												span 6.82 сот.
+												|  участок
+										td
+											p.table_price
+												span 2 880 000
+												|  руб.
+										td -
+										td 3
+									tr(data-src="#popup_item").modal_btn.modal_btn_table
+										td
+											.table_photo
+												.table_img(style="background-image: url(./images/table_img2.jpg)")
+										td
+											p.table_area
+												span 6.82 сот.
+												|  участок
+											p.table_area
+												span 113 м2
+												|  дом
+										td
+											p.table_price
+												span 2 880 000
+												|  руб.
+										td
+											.table_label.label_green Спец предложение
+										td 2
+									tr(data-src="#popup_item").modal_btn.modal_btn_table
+										td
+											.table_photo
+												.table_img(style="background-image: url(./images/table_img3.jpg)")
+										td
+											p.table_area
+												span 6.82 сот.
+												|  участок
+											p.table_area
+												span 113 м2
+												|  дом
+										td
+											p.table_price
+												span 2 880 000
+												|  руб.
+										td -
+										td 12
+									tr(data-src="#popup_item").modal_btn.modal_btn_table
+										td
+											.table_photo
+												.table_img(style="background-image: url(./images/table_img4.jpg)")
+										td
+											p.table_area
+												span 6.82 сот.
+												|  участок
+											p.table_area
+												span 113 м2
+												|  дом
+										td
+											p.table_price
+												span 2 880 000
+												|  руб.
+										td -
+										td 5
+									tr(data-src="#popup_item").modal_btn.modal_btn_table
+										td
+											.table_photo
+												.table_img(style="background-image: url(./images/table_img5.jpg)")
+										td
+											p.table_area
+												span 6.82 сот.
+												|  участок
+											p.table_area
+												span 113 м2
+												|  дом
+										td
+											p.table_price
+												span 2 880 000
+												|  руб.
+										td -
+										td 3
+						.load_more_wrap
+							button.load_more_btn Загрузить еще 
+								span (+8)
+									
+
+		
+		section.galery_section
+			.section_offset
+				.container
+					.container_inner
+						a(href="javascript:;" style="background-image: url(./images/galery_img1.jpg)").galery_link
+							//- img(src="./images/galery_img.jpg", alt="")
+							//- h4 фотогалерея проекта
+			.day_figure.galery_figure1
+				img(src="./images/figures/day_figure6.png", alt="")
+			.day_figure.galery_figure2
+				img(src="./images/figures/day_figure3.png", alt="")
+			.day_figure.galery_figure3
+				img(src="./images/figures/day_figure7.png", alt="")
+			.day_figure.galery_figure4
+				img(src="./images/figures/day_figure5.png", alt="")
+			.day_figure.galery_figure5
+				img(src="./images/figures/day_figure4.png", alt="")
+			.day_figure.galery_figure6
+				img(src="./images/figures/day_figure2.png", alt="")
+			.day_figure.galery_figure7
+				img(src="./images/figures/day_figure1.png", alt="")
+
+		
+		section.aero_section
+			.section_offset
+				.aero_wrap(style="background-image: url(./images/aero_bg.jpg)")
+					.container
+						.container_inner
+							.aero_content_box
+								.aero_icon
+									img(src="./images/icons/aero_icon.png", alt="")
+								.aero_content
+									h4 Аэросъемка поселка
+									a(href="javascript:;") Смотреть
+								.aero_img(data-parallaxify-range-y="50" data-parallaxify-range-x="50")
+									img(src="./images/aero_img.png", alt="")
+
+		
+		section.features_section2
+			.section_offset
+				.container
+					.container_inner
+						h3 Горки-1 — это поселок-курорт
+						.features_wrap
+							.row.no-gutters
+								.col-lg-6
+									.features_item
+										.features_bg(style="background-image: url(./images/features/features_img12.jpg)")
+										.features_content
+											.features_content_top
+												.features_title_wrap
+													.features_title_img
+														img(src="./images/icons/features/features_icon12.png", alt="")
+													p.features_title Два собственных водоема 
+														br
+														| с кристально-чистой водой
+												p.features_txt Больше, чем живописные виды из окна
+											.features_content_bot
+												a(href="javascript:;" data-src="#features_popup").modal_btn Подробнее
+								.col-lg-6
+									.features_item
+										.features_bg(style="background-image: url(./images/features/features_img13.jpg)")
+										.features_content
+											.features_content_top
+												.features_title_wrap
+													.features_title_img
+														img(src="./images/icons/features/features_icon13.png", alt="")
+													p.features_title Прогулка по территории
+												p.features_txt Пространство для отдыха и новых открытий
+											.features_content_bot
+												a(href="javascript:;" data-src="#features_popup").modal_btn Подробнее
+								.col-lg-6
+									.features_item
+										.features_bg(style="background-image: url(./images/features/features_img14.jpg)")
+										.features_content
+											.features_content_top
+												.features_title_wrap
+													.features_title_img
+														img(src="./images/icons/features/features_icon14.png", alt="")
+													p.features_title Первая береговая линия р. Ока
+												p.features_txt Уникальное расположение на берегу реки
+											.features_content_bot
+												a(href="javascript:;" data-src="#features_popup").modal_btn Подробнее
+								.col-lg-6
+									.features_item
+										.features_bg(style="background-image: url(./images/features/features_img15.jpg)")
+										.features_content
+											.features_content_top
+												.features_title_wrap
+													.features_title_img
+														img(src="./images/icons/features/features_icon15.png", alt="")
+													p.features_title Чистый воздух
+												p.features_txt Захватывающие пейзажи и лучшая экология
+											.features_content_bot
+												a(href="javascript:;" data-src="#features_popup").modal_btn Подробнее
+
+		section.form_section
+			.section_offset
+				.container
+					.container_inner
+						.form_box
+							.title5 Это место нужно увидеть вживую!
+							.title4 Запишитесь на просмотр участка, чтобы увидеть своими глазами
+							form(action="").validate.main_form
+								.row
+									.col-md-4
+										.input_box
+											label(for="name") Ваше имя
+												span *
+											input(type="text" id="name" name="name")
+									.col-md-4
+										.input_box
+											label(for="tel") Номер телефона
+												span *
+											input(type="tel" id="tel" name="tel").input_tel
+									.col-md-4
+										.input_box
+											label(for="date") Желаемая дата
+												span *
+											.select_wrap
+												input(type="text" class="datepicker-here" data-position="bottom left" name="date")
+									.col-12
+										.input_check_wrap
+											input(type="checkbox" id="check" name="check")
+											label(for="check") Нажатием кнопки «Записаться на просмотр» я даю своё согласие на обработку персональных данных. 
+												br
+												| С
+												a(href="javascript:;") политикой обработки персональных данных
+												|  ознакомлен и согласен.
+								button.btn_green Записаться на просмотр
+		
+		.bot_bg
+			img(src="./images/main_bottom_bg.jpg", alt="")
+		// - - - - - - - - - - - - - End of something_container - - - - - - - - - - - - - - - - 
+
+		.popup_item#popup_item
+			h3 Участок № 99
+			.popup_item_wrap
+				.row.align-items-start
+					.col-lg-5
+						.popup_left
+							.sliders_wrap
+								.slick-carousel.popup_slider_for
+									.popup_for_slide
+										.popup_for_img(style="background-image: url(./images/popup_img_big.jpg)")
+									.popup_for_slide
+										.popup_for_img(style="background-image: url(./images/popup_img_big.jpg)")
+									.popup_for_slide
+										.popup_for_img(style="background-image: url(./images/popup_img_big.jpg)")
+								.slick-carousel.popup_slider_nav
+									.popup_nav_slide
+										.popup_nav_img(style="background-image: url(./images/popup_img_small.jpg)")
+									.popup_nav_slide
+										.popup_nav_img(style="background-image: url(./images/popup_img_small.jpg)")
+									.popup_nav_slide
+										.popup_nav_img(style="background-image: url(./images/popup_img_small.jpg)")
+							ul
+								li
+									.popup_features_icon
+										img(src="./images/icons/popup_icon1.png", alt="")
+									p Коммуникация по границе участка
+								li
+									.popup_features_icon
+										img(src="./images/icons/popup_icon2.png", alt="")
+									p Фиксированные членские взносы 3400 руб/мес
+					.col-lg-7
+						.popup_right
+							.popup_item_content
+								dl
+									dt Площадь:
+									dd 6 соток
+
+									dt Цена:
+									dd
+										span 1 590 000
+										|  руб
+
+									dt Площадь дома:
+									dd 200 м2
+								
+								p.popup_list_title Инфраструктура
+								ul
+									li
+										.popup_list_icon
+											img(src="./images/icons/popup_list1.png", alt="")
+										| Электричество
+									li
+										.popup_list_icon
+											img(src="./images/icons/popup_list2.png", alt="")
+										| Свет
+									li
+										.popup_list_icon
+											img(src="./images/icons/popup_list3.png", alt="")
+										| Газ
+									li
+										.popup_list_icon
+											img(src="./images/icons/popup_list4.png", alt="")
+										| Высокоскорстной Интернет
+
+								.popup_item_btn
+									a(href="javascript:;" data-src="#form_box_popup").btn_green.modal_btn Записаться на просмотр
+									a(href="javascript:;").btn_blue купить в кредит
+
+								.popup_item_bot
+									p Есть вопросы?
+									.popup_bot_links
+										a(href="tel:+7 (495) 000-00-00").popup_tel_link +7 (495) 000-00-00
+										a(href="javascript:;" data-src="#call").popup_q_link.modal_btn Задать вопрос
+											img(src="./images/icons/popup_icon3.png", alt="")
+		
+		.form_box.form_box_popup#form_box_popup
+			.title5 Это место нужно увидеть вживую!
+			.title4 Запишитесь на просмотр участка, чтобы увидеть своими глазами
+			form(action="").validate.main_form_popup
+				.row
+					.col-md-4
+						.input_box
+							label(for="name") Ваше имя
+								span *
+							input(type="text" id="name" name="name")
+					.col-md-4
+						.input_box
+							label(for="tel") Номер телефона
+								span *
+							input(type="tel" id="tel" name="tel").input_tel
+					.col-md-4
+						.input_box
+							label(for="date") Желаемая дата
+								span *
+							.select_wrap
+								input(type="text" class="datepicker-here" data-position="bottom left" name="date")
+					.col-12
+						.input_check_wrap
+							input(type="checkbox" id="check" name="check")
+							label(for="check") Нажатием кнопки «Записаться на просмотр» я даю своё согласие на обработку персональных данных. 
+								br
+								| С
+								a(href="javascript:;") политикой обработки персональных данных
+								|  ознакомлен и согласен.
+				button.btn_green Записаться на просмотр
+	
+
+		.features_popup#features_popup
+			img(src="./images/features_popup_img.jpg", alt="")
+			.features_popup_content.clearfix
+				h4 
+					img(src="./images/icons/features_popup_icon.png", alt="")
+					|  Детский клуб
+				a(href="javascript:;" data-src="#form_box_popup").btn_green.modal_btn Записаться на просмотр участка
+				span Раскрывайте потенциал ваших детей в детском развивающем клубе
+				p Детский клуб на территории курортного поселка Горки-1 будет создан специально для того, чтобы время загородного отдыха для ваших детей прошло ярко, весело и с пользой!  С детьми будут работать настоящие профессионалы, которые построят процесс обучения на познавательных и увлекательных играх. Неиссякаемая энергия малышей обязательно найдет здесь свое применение в творческих мастер-классах, спортивных играх, обучающих и развивающих занятиях. Здесь также можно будет устраивать такие яркие детские праздники, что ваши маленькие принцы и принцессы не захотят возвращаться в город! 
+
+	
+	
+	// Content End       ============================================ 
+
+
+//- Content End       ============================================ 
+
+

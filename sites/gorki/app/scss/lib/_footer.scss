@@ -1,0 +1,208 @@
+#footer {
+    flex: 0 0 auto;
+    padding-top: 45px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    h4{
+        font-size: 22px;
+        line-height: 24px;
+        color: #404041;
+        font-weight: 600;
+        margin-bottom: 30px;  
+    }
+}
+
+.footer_top{
+    display: flex;
+}
+.footer_top_left{
+    margin-right: 50px;
+    flex-grow: 2;
+}
+.footer_top_row{
+    display: flex;
+    justify-content: space-between;
+}
+.col-footer-4{
+    padding-right: 10px;
+    // width: 33.3%;
+    // &:not(:last-child){
+    //     padding-right: 30px;
+    // }
+}
+.col-footer-12{
+    width: 100%;
+}
+
+
+.footer_list{
+    margin-bottom: 40px;
+    li{
+        &:not(:last-child){
+            margin-bottom: 15px;
+        }
+        a{
+            font-size: 16px;
+            line-height: 18px;
+            color: #404041;
+            text-decoration: underline !important;
+            &:hover{
+                text-decoration: none !important;
+                color: #93c03c;
+            }
+            &.footer_link_blue{
+                color: #6fcfd9;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.footer_txt_adress{
+    font-size: 16px;
+    line-height: 21px;
+    color: #404041;
+    span{
+        font-weight: 600;
+    }
+}
+
+.footer_txt_sub{
+    font-size: 14px;
+    line-height: 21px;
+    color: #b3b3b3;
+}
+
+.footer_box{
+    width: 330px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: #f7f7f7;      
+}
+.footer_tel_wrap{
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 25px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 25px;
+        height: 20px;
+        background: url(../images/icons/header_tel_icon.png) no-repeat;
+    }    
+}
+.footer_tel_link{
+    font-size: 25px;
+    line-height: 30px;
+    color: #404041;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 5px;
+    &:hover{
+        color: #93c03c;
+    }
+}
+.footer_call_link{
+    font-size: 16px;
+    line-height: 18px;
+    color: #404041;
+    text-decoration: underline !important;
+    &:hover{
+        text-decoration: none !important;
+    }
+}
+.footer_date_wrap{
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        background: url(../images/icons/contact_icon3.png) no-repeat;
+        opacity: 0.6;
+    } 
+    p{
+        font-size: 16px;
+        line-height: 20px;
+        color: #404041;
+        span{
+            font-weight: 600;
+        }
+    } 
+}
+.footer_mail_wrap{
+    position: relative;
+    padding-left: 40px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        background: url(../images/icons/contact_icon1.png) no-repeat;
+        opacity: 0.6;
+    }
+    p{
+        font-size: 16px;
+        line-height: 20px;
+        color: #404041;
+        font-weight: 600;       
+    } 
+    a{
+        font-size: 16px;
+        line-height: 20px;
+        color: #404041;
+        &:hover{
+            color: #93c03c;
+        }
+    }
+}
+
+.footer_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.footer_bottom_left{
+    display: flex;
+    align-items: center;
+    a{
+        font-size: 14px;
+        line-height: 21px;
+        color: rgba(#404041, 0.6);
+        text-decoration: underline !important;
+        &:hover{
+            text-decoration: none !important;
+        }
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+    }
+}
+.footer_copy{
+    font-size: 14px;
+    line-height: 21px;
+    color: #404041;
+    margin-right: 20px;
+}
+.footer_bottom_right{
+    display: flex;
+    align-items: center;
+    a{
+        font-size: 14px;
+        line-height: 21px;
+        color: rgba(#404041, 0.6);
+        margin-right: 5px;
+        &:hover{
+            color: #93c03c;
+        }
+    }
+}

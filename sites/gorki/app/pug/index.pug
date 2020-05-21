@@ -1,0 +1,55 @@
+extends ../pug/templates/main
+
+block vars
+	- var title = "Список страниц";
+	- var headerClasses = ['header_inner'];
+	- var footerClasses = ['footer1'];
+
+//- block title
+//- 	| Главная страница
+
+
+//- Content Start     ============================================ 
+
+
+block content
+
+	// Content Start     ============================================ 
+
+	main#content.p_rel
+
+		section.inner_section
+			.container
+				.container_inner
+					h1 Список страниц
+
+					ul
+						li
+							a(href="main.html" target="_blank") Главная
+						li
+							a(href="index_table.html" target="_blank") Главная (таблица без результата)
+						li
+							a(href="news.html" target="_blank") Новости
+						li
+							a(href="one_news.html" target="_blank") Одна новость
+						li
+							a(href="contact.html" target="_blank") Контакты
+						li
+							a(href="galery.html" target="_blank") Галерея
+						li
+							a(href="inf.html" target="_blank") Инфраструктура
+
+
+
+		
+
+		// - - - - - - - - - - - - - End of something_container - - - - - - - - - - - - - - - - 
+
+
+
+	// Content End       ============================================ 
+
+
+//- Content End       ============================================ 
+
+

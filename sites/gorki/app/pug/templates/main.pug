@@ -1,0 +1,72 @@
+<!Doctype html>
+html(lang="en")
+	
+	// Head Start     ============================================ 
+	include ../moduls/head 
+	// Head End       ============================================ 
+
+	// Body Start     ============================================ 
+	body
+		//[if lte IE 9]><div class="browse-happy"><h3>You are using an <strong>outdated</strong> browser. Please<a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</h3></div><![end if]
+        
+		div.page_wrap
+
+
+			
+			// Preloader Start     ============================================ 
+			div#page-preloader
+				span.preloader
+			// Preloader End       ============================================ 
+
+
+
+
+			// Header Start     ============================================ 
+			include ../moduls/header
+			// Header End       ============================================ 
+
+
+
+
+			//- Content Start     ============================================ 
+			block content
+			//- Content End       ============================================ 
+			
+
+
+
+
+			// Footer Start     ============================================ 
+			include ../moduls/footer
+			// Footer End       ============================================ 
+
+
+
+			//- Popup Start     ============================================ 
+			.call_popup#call
+				.form_box.form_popup
+					.title4 Заполните форму и мы вам перезвоним
+					form(action="").validate.call_form
+						.input_box
+							label(for="name") Ваше имя
+								span *
+							input(type="text" id="name" name="name")
+						.input_box
+							label(for="tel") Номер телефона
+								span *
+							input(type="tel" id="tel" name="tel")
+						button.btn_green Заказать звонок
+			//- Popup End       ============================================ 
+			
+
+
+
+
+		//- ALL SCRIPTS and LIBS START     ============================================
+		include ../moduls/scripts
+		//- ALL SCRIPTS and LIBS END       ============================================
+
+
+
+
+	// Body End       ============================================ 
